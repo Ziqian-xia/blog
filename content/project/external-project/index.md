@@ -1,12 +1,11 @@
 ---
-date: "2016-04-27T00:00:00Z"
-active: false
-external_link: http://example.org
+date: "2020-06-27T00:00:00Z"
+external_link: https://ziqian-xia.github.io/resource/
 image:
-  caption: Photo by Toa Heftiba on Unsplash
+  caption: Meta analysis and Bibliometrics of fine root research
   focal_point: Smart
-summary: An example of linking directly to an external project website using `external_link`.
+summary: This website is a tutorial repository of meta-analyses and systematic reviews designed specifically for Cao’s group as part of the 2020 CAS Undergraduate Inovation Program.
 tags:
-- Demo
-title: External Project
+- Meta
+title: Chinese Academy of Science Funded Project
 ---

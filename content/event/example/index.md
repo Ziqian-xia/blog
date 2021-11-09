@@ -1,37 +1,26 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellusac
-  convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac
-  faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien
-  eu, pulvinar tempor diam.
+abstract: This talk will enable you to use R to easily visualize data and create publish-standards plot. All the codes and example are free to download and welcome to revise. We will cover ggplot and its derivative packages in this 2 hr long talk, and it will give you a intuitive knowledge of ploting.
 address:
-  city: Stanford
-  country: United States
-  postcode: "94305"
-  region: CA
-  street: 450 Serra Mall
+  city: Nanchang
+  country: China
+  postcode: "330031"
+  region: CN
+  street: Xuefu Ave 999.
 all_day: false
 authors: []
-date: "2030-06-01T13:00:00Z"
-date_end: "2030-06-01T15:00:00Z"
-event: Wowchemy Conference
-event_url: https://example.org
+date: "2021-11-13T19:30:00Z"
+date_end: "2021-11-13T21:30:00Z"
+event: R-Graphic Crash Course
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/bzdhc5b3Bxs)'
+  caption: 'Image credit: R'
   focal_point: Right
-links:
-- icon: twitter
-  icon_pack: fab
-  name: Follow
-  url: https://twitter.com/georgecushen
-location: Wowchemy HQ
-projects:
-- internal-project
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: An example talk using Wowchemy's Markdown slides feature.
-tags: []
-title: Example Talk
+location: Zhihua Building B 340
+
+publishDate: "2021-11-09T00:00:00Z"
+summary: This talk will enable you to use R to easily visualize data and create publish-standards plot.
+tags: R-Teaching
+title: R-Graphics Crash Course
 url_code: ""
 url_pdf: ""
 url_slides: ""
@@ -39,13 +28,13 @@ url_video: ""
 ---
 
 {{% callout note %}}
-Click on the **Slides** button above to view the built-in slides feature.
+Follow the pre-requisition below to ensure you could follow the steps.
 {{% /callout %}}
 
-Slides can be added in a few ways:
+Pre-requisition:
 
-- **Create** slides using Wowchemy's [*Slides*](https://wowchemy.com/docs/managing-content/#create-slides) feature and link using `slides` parameter in the front matter of the talk file
-- **Upload** an existing slide deck to `static/` and link using `url_slides` parameter in the front matter of the talk file
-- **Embed** your slides (e.g. Google Slides) or presentation video on this page using [shortcodes](https://wowchemy.com/docs/writing-markdown-latex/).
+- **下载**并**安装** [R语言程序包](https://mirrors.tongji.edu.cn/CRAN/),选择自己对应的操作系统下载。
+- **下载**并**安装**[RStudio](https://www.rstudio.com/products/rstudio/)，选择Desktop版本。
+- 浏览[Tidyverse Package网页](https://www.tidyverse.org/),并尝试使用install.packages("tidyverse")指令安装Tidyverse Package.
+- 浏览本课程将复现的[论文图片](https://doi.org/10.1016/j.resconrec.2021.105775)
 
-Further event details, including [page elements](https://wowchemy.com/docs/writing-markdown-latex/) such as image galleries, can be added to the body of this page.
