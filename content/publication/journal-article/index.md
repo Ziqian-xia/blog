@@ -26,7 +26,7 @@ publication_types:
 publishDate: "2021-08-10T00:00:00Z"
 summary: In this paper, 180,417 drop-off data from 13,047 college students in the backend of Internet of Things (IoT) bins are analyzed in conjunction with 320 questionnaires. Technology Acceptance Model (TAM), Theory of Planned Behavior (TPB) and Norm Activation Model (NAM) are used together to analyze college students' waste sorting behavior.
 tags:
-- Source Themes
+- Environmental Behaviour
 title: "Understanding waste sorting behavior and key influencing factors through internet of things: Evidence from college student community"
 url_code: 
 url_dataset: ""
