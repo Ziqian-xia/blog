@@ -12,7 +12,7 @@ authors:
 - Yaobin Liu
 date: "2021-06-18T00:00:00Z"
 doi: "https://doi.org/10.1016/j.resconrec.2021.105775"
-featured: false
+featured: true
 image:
   caption: 'Image credit: [**Wiki**](https://en.wikipedia.org/wiki/Waste_sorting#/media/File:NEA_recycling_bins,_Orchard_Road.JPG)'
   focal_point: ""

@@ -3,13 +3,15 @@
 # Documentation: https://wowchemy.com/docs/page-builder/
 widget: featured
 
+active: false
+
 # This file represents a page section.
 headless: true
 
 # Order that this section appears on the page.
-weight: 80
+weight: 40
 
-title: Featured Publications
+title: "Featured Article"
 subtitle: ""
 
 content:
