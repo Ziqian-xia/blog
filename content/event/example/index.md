@@ -1,5 +1,5 @@
 ---
-abstract: This talk will enable you to use R to easily visualize data and create publish-standards plot. All the codes and example are free to download and welcome to revise. We will cover ggplot and its derivative packages in this 2 hr long talk, and it will give you a intuitive knowledge of ploting.
+abstract: This talk will enable you to use R to easily visualize data and create publish-standards plots. All the codes and examples are free to download and welcome to revise. We will cover ggplot and its derivative packages in this 2 hr long talk, and it will give you an intuitive knowledge of plotting.
 address:
   city: Nanchang
   country: China
