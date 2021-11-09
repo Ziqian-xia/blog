@@ -21,7 +21,7 @@ publication_types:
 publishDate: "2021-11-01T00:00:00Z"
 summary: Coming Soon
 tags:
-- Source Themes
+- Meta
 title: Meta-analysis of waste sorting interventions / working paper
 url_code: 
 url_dataset: 
