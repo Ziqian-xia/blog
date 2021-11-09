@@ -1,6 +1,5 @@
 ---
-bio: My research interests include distributed robotics, mobile computing and programmable
-  matter.
+bio: My research interests include Environmental Behaviour、Environmental Economics and Meta Science.
 education:
   courses:
   - course: Master in Public Policy
