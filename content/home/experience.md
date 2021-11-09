@@ -24,8 +24,8 @@ date_format: Jan 2006
 experience:
   - title: Research Assistant
     company: Nanchang University
-    company_url: ''
-    company_logo: org-x
+    company_url: 'http://english.ncu.edu.cn/'
+    company_logo: ncu
     location: Nanchang, China
     date_start: '2021-06-18'
     date_end: ''
@@ -33,8 +33,8 @@ experience:
 
   - title: Research Intern
     company: University of Winnipeg
-    company_url: ''
-    company_logo: org-x
+    company_url: 'https://www.uwinnipeg.ca/'
+    company_logo: uwinnipeg
     location: Winnipeg, Canada
     date_start: '2021-06-01'
     date_end: '2021-09-01'
