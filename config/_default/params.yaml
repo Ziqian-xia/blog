@@ -15,45 +15,41 @@ font_size: L
 site_type: Person
 local_business_type: ''
 org_name: ''
-description: ''
-twitter: ''
+description: 'Personal Sites of Ziqian Xia'
+twitter: 'https://twitter.com/Ziqian_Xia'
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+email: Ziqian.research@gmail.com
+phone: +86 17694989975
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-  country_code: US
+  street: Xuefu Ave, Honggutan New District
+  city: Nanchang
+  region: Jiangxi Province
+  postcode: '330031'
+  country: China
+  country_code: CN
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+  latitude: '28.662'
+  longitude: '115.80'
+directions: Zhihua Tech Building,1007
 office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
+  - 'Weekday 10:00 to 21:00'
+  - 'Weekend 11:00 to 21:00'
 appointment_url: 'https://calendly.com'
 contact_links:
   - icon: twitter
     icon_pack: fab
     name: DM Me
-    link: 'https://twitter.com/Twitter'
-  - icon: skype
+    link: 'https://twitter.com/Ziqian_Xia'
+  - icon: researchgate
     icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
+    name: Find me on Researchgate
+    link: https://www.researchgate.net/profile/Ziqian-Xia
+  - icon: github
     icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+    name: Contact via github
+    link: https://github.com/ziqian-xia
 
 # Site header
 
