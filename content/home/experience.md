@@ -41,6 +41,16 @@ experience:
     description: |2-
         Help team with reports and geo-visualization/analysis.
         
+  - title: Research Assistant
+    company: The institute of soil and water conservation (ISWC),Chinese Academy of Sciences
+    company_url: 'http://english.iswc.cas.cn/au/'
+    company_logo: CAS
+    location: Xi’an, China
+    date_start: '2019-09-01'
+    date_end: '2020-09-01'
+    description: |2-
+        Conduct bibliographic analysis and meta-science research.
+        
 
 
 design:
