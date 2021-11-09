@@ -22,7 +22,7 @@ title: "What to write in a scientific paper Series: A rev to Zhang,2019"
 
 When I received the message that the review stage for my paper is finished, I feel much relieved. Major Revisions, at least, better than Reject. After two rows of revisions, my supervisor, Prof Tian is still not content with my paper and he points out that it needs substantial improvement in Discussion Section. For the next few days, I will update some reviews which contain my personal views towards previous studies, and I try to find a cozy, comfortable way to structure papers.
 
-## A Review to *From intention to action: How do personal attitudes, facilities accessibility, and government stimulus matter for household waste sorting?* *Journal of Environmental Management*
+#### A Review to *From intention to action: How do personal attitudes, facilities accessibility, and government stimulus matter for household waste sorting?* *Journal of Environmental Management*
 
 For easy reading propose, you can download this paper when reading this post.
 
