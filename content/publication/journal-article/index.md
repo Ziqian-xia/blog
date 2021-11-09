@@ -1,52 +1,44 @@
 ---
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed
-  ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis
-  sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida
-  egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id
-  dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus.
-  Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: "Understanding the intention and behavior of individual is crucial to the effective implementation of waste sorting. Previous scholars mainly studied it through questionnaire research. This approach has a limited sample size, and the real behavior is difficult to quantify. In this paper, 180,417 drop-off data from 13,047 college students in the backend of Internet of Things (IoT) bins are analyzed in conjunction with 320 questionnaires. Technology Acceptance Model (TAM), Theory of Planned Behavior (TPB) and Norm Activation Model (NAM) are used together to analyze college students' waste sorting behavior. The results are as follows: (1) College students sort 0.426 kg recyclable waste per (person·week) in the investigated community, and the drop-off frequency of pre-class and mealtime is 46% higher than usual. (2) Due to the pressure of subjective norms, 75% of respondents reported a 220% higher frequency of 3–8 occasions per week than the actual situation. (3) The current incentive level (1 kg recyclables can exchange for a reward equivalent to 9 cents) cannot significantly regulate the relationship between waste sorting intention and behavior. (4) IoT and questionnaire data show that perceived ease of use could directly promote waste sorting intention and behavior. The findings provide a scientific basis for effectively improving the waste sorting behavior of the public."
 author_notes:
-- Equal contribution
-- Equal contribution
+- Main Investigator
+- Co-investigator
+- Supervisor
+- Supervisor
 authors:
 - admin
-- Robert Ford
-date: "2015-09-01T00:00:00Z"
-doi: ""
+- Si Zhang
+- Xi Tian
+- Yaobin Liu
+date: "2021-06-18T00:00:00Z"
+doi: "https://doi.org/10.1016/j.resconrec.2021.105775"
 featured: false
 image:
-  caption: 'Image credit: [**Unsplash**](https://unsplash.com/photos/jdD8gXaTZsc)'
+  caption: 'Image credit: [**Wiki**](https://en.wikipedia.org/wiki/Waste_sorting#/media/File:NEA_recycling_bins,_Orchard_Road.JPG)'
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Journal of Source Themes, 1*(1)'
+publication: '*Resources, Conservation and Recycling*
+Volume 174, November 2021, 105775'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2017-01-01T00:00:00Z"
-slides: example
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus
-  ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+publishDate: "2021-08-10T00:00:00Z"
+summary: In this paper, 180,417 drop-off data from 13,047 college students in the backend of Internet of Things (IoT) bins are analyzed in conjunction with 320 questionnaires. Technology Acceptance Model (TAM), Theory of Planned Behavior (TPB) and Norm Activation Model (NAM) are used together to analyze college students' waste sorting behavior.
 tags:
 - Source Themes
 title: An example journal article
-url_code: https://github.com/wowchemy/wowchemy-hugo-themes
+url_code: 
 url_dataset: ""
-url_pdf: http://arxiv.org/pdf/1512.04133v1
+url_pdf: https://doi.org/10.1016/j.resconrec.2021.105775
 url_poster: ""
 url_project: ""
-url_slides: ""
-url_source: ""
-url_video: ""
+ 
 ---
 
 {{% callout note %}}
-Click the *Cite* button above to demo the feature to enable visitors to import publication metadata into their reference management software.
+Know more about the article by visit https://doi.org/10.1016/j.resconrec.2021.105775 .
 {{% /callout %}}
 
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
 
-Supplementary notes can be added here, including [code, math, and images](https://wowchemy.com/docs/writing-markdown-latex/).
+
