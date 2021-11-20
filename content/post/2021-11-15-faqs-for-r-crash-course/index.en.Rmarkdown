@@ -28,18 +28,11 @@ projects: []
 
         -   解决方案：
 
-        ```{r}
-        使用.libPaths()检查路径，是否存在???或乱码的情况
+            使用.libPaths()检查路径，是否存在???或乱码的情况
+
         修改.libPaths()
-        如：
-        .libPaths()[1]<-"C:/Program Files/R"
-        ```
 
-    -   未能选择有效的镜像
-
-        -   解决方案
-
-        在Tools-Global Options-Packages中，更改Primary CRAN Repository，选择在China地区的镜像，如Tongji University.
+        如：.libPaths()\[1\]\<-"C:/Program Files/R"
 
 2.  我安装了Package，但是不能运行函数
 
