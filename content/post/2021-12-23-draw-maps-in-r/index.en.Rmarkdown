@@ -180,7 +180,7 @@ ggplot(data = china) +
 
 ## 方法三：ggmap（适合点图）
 
-日后补充
+我认为ggmap的好处在于，他可以和开源地图直接联动（虽然现在好像只有open street map还能使用，google map已经要求需要提供api。）对于自己有很多带经纬度的poi的情况，我首推ggmap，免去了自己搞地图的困扰。
 
 ## 方法三：tmap（适合填充图）
 
