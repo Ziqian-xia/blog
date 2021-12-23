@@ -197,17 +197,14 @@ ggplot(data = world) +
 
 -   可以调整主题的更多元素，这里就不一一介绍了。我们建议读者参考该函数的文档`theme`。
 
-## 方法二：mapchina包（仅仅适合中国地图）
 
+
+这里展示一张最近画的，论文中的地图，因为使用了NE图源，所以一定要注明是中国大陆。
 
 ```r
+library(rnaturalearth)
 library(mapchina)
-```
-
-调用一下mapchina，这里面自带了市级层面的中国数据，存在china这个变量里
-
-
-```r
+library(ggspatial)
 library(tidyverse)
 ```
 
@@ -229,6 +226,41 @@ library(tidyverse)
 ```
 
 ```r
+nechina<-ne_states(country = 'china',returnclass = 'sf')
+
+nechina<-nechina%>%
+  mutate(target=case_when(name=="Hubei"~"Research Aera",
+                          T~'Mainland China'))
+
+ggplot(data = nechina) +
+  geom_sf(aes(fill=target))+
+  scale_fill_manual(values = c("#dadada", "#08ffc8"))+
+  annotation_scale(location = "bl", width_hint = 0.5) +
+  annotation_north_arrow(location = "bl", which_north = "true", 
+                         pad_x = unit(0.75, "in"), pad_y = unit(0.5, "in"),
+                         style = north_arrow_fancy_orienteering)+
+  theme_bw()+
+  labs(fill=' ')
+```
+
+```
+## Scale on map varies by more than 10%, scale bar may be inaccurate
+```
+
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-9-1.png" width="672" />
+
+## 方法二：mapchina包（仅仅适合中国地图）
+
+
+```r
+library(mapchina)
+```
+
+调用一下mapchina，这里面自带了市级层面的中国数据，存在china这个变量里
+
+
+```r
+library(tidyverse)
 library(sf)
 ```
 
@@ -244,7 +276,7 @@ ggplot(data = china) +
         theme(legend.position = "none")
 ```
 
-<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-10-1.png" width="672" />
+<img src="{{< blogdown/postref >}}index.en_files/figure-html/unnamed-chunk-11-1.png" width="672" />
 
 使用dplyr匹配变量，直接画就行了。
 
@@ -252,7 +284,7 @@ ggplot(data = china) +
 
 ## 方法三：ggmap（适合点图）
 
-日后补充
+我认为ggmap的好处在于，他可以和开源地图直接联动（虽然现在好像只有open street map还能使用，google map已经要求需要提供api。）对于自己有很多带经纬度的poi的情况，我首推ggmap，免去了自己搞地图的困扰。
 
 ## 方法三：tmap（适合填充图）
 
