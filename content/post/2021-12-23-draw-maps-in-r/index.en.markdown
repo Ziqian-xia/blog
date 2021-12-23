@@ -183,8 +183,6 @@ ggplot(data = world) +
 
 此外，该`annotate`函数可用于在特定位置添加单个字符串，如下所示添加墨西哥湾：
 
-
-
 ### 最终地图
 
 现在要进行最后的润色，可以编辑地图的主题以使其更具吸引力。我们建议对`theme_bw`标准主题使用 ，但还有许多其他主题可供选择（例如参见`?ggtheme`中的`ggplot2`，或[`ggthemes`](https://cran.r-project.org/package=ggthemes)提供几个有用主题的包 ）。此外，可以调整特定的主题元素以获得最终结果：
@@ -197,9 +195,8 @@ ggplot(data = world) +
 
 -   可以调整主题的更多元素，这里就不一一介绍了。我们建议读者参考该函数的文档`theme`。
 
-
-
 这里展示一张最近画的，论文中的地图，因为使用了NE图源，所以一定要注明是中国大陆。
+
 
 ```r
 library(rnaturalearth)
@@ -289,3 +286,23 @@ ggplot(data = china) +
 ## 方法三：tmap（适合填充图）
 
 日后补充
+
+------------------------------------------------------------------------
+
+## 参考
+
+Wickham, Hadley, and Maintainer Hadley Wickham. "The ggplot package." (2007).
+
+South, Andy. "Rnaturalearth: world map data from natural earth." *R package version 0.1. 0* (2017).
+
+Kahle, David J., and Hadley Wickham. "ggmap: spatial visualization with ggplot2." *R J.* 5.1 (2013): 144.
+
+Tennekes, Martijn. "tmap: Thematic Maps in R." *Journal of Statistical Software* 84.1 (2018): 1-39.
+
+<https://r-spatial.org/r/2018/10/25/ggplot2-sf.html>
+
+<https://www.nrel.colostate.edu/this-is-how-i-did-it-mapping-in-r-with-ggplot2/>
+
+<https://eriqande.github.io/rep-res-web/lectures/making-maps-with-R.html>
+
+<https://bookdown.org/mcwimberly/gdswr-book/mapping-with-ggplot2.html>
