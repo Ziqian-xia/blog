@@ -1,0 +1,187 @@
+---
+title: Draw maps in R
+author: Ziqian Xia
+date: '2021-12-23'
+slug: draw-maps-in-r
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-12-23T19:59:44+08:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+## 引子
+
+对于社会科学学科的人来源，画地图一直是一项必备的技能。我自己也尝试了很多软件(如QGIS、Geoda、ArcGIS等等)，也使用过一些R Package(Tmap、ggmap), 但一直没有找到一个很好的Workflow。特别是在符合版权要求，快速绘制地图的办法。
+
+最近朋友的一篇文章审稿遇到了地图需要符合CC BY 4.0的意见，也是十分苦恼。用此文简单描述一下当前我认为比较好的制图方法。
+
+## 方法一：ggplot+NaturalEarth直接画
+
+需要的包：
+
+```{r}
+library(rnaturalearth)
+library(sp)
+library(tmap)
+library(rnaturalearthhires)
+library(rnaturalearth)
+library(mapchina)
+library(ggspatial)
+```
+
+这里使用了Natural Earth的图源，这个图源是符合CC BY4.0要求的，但是里面的中国地图存在一些缺陷。如果画中国地图的话，建议使用我国官方的图源。
+
+注：一些其他的CC BY 4.0图源
+
+-   USGS National Map Viewer (<http://viewer.nationalmap.gov/viewer/)>
+
+-   USGS Earth Resources Observatory and Science (EROS) Center (<http://eros.usgs.gov/#)>
+
+-   The Gateway to Astronaut Photography of Earth (<https://eol.jsc.nasa.gov/)>
+
+-   Maps at the CIA (<https://www.cia.gov/library/publications/the-world-factbook/docs/refmaps.html)>
+
+-   NASA Earth Observatory (<http://earthobservatory.nasa.gov/)>
+
+-   Landsat (<http://landsat.visibleearth.nasa.gov/)>
+
+软件包`rnaturalearth`提供了全世界各国的地图。使用`ne_countries`到拉国家数据并选择规模（`rnaturalearthhires`是必要的`scale = "large"`）。该函数可以返回`sp`类（默认）或直接返回类`sf`，如参数中所定义`returnclass`：
+
+```{r}
+library("rnaturalearth")
+
+world <- ne_countries(scale = "medium", returnclass = "sf")
+class(world)
+
+## [1] "sf"  
+## [1] "data.frame"
+```
+
+### 数据和基本图（`ggplot`和`geom_sf`）
+
+使用 `ggplot2`画底图将使用不同的地图元素进行扩展域。我们可以检查世界地图是否被正确检索并转换为`sf`对象，并使用以下方式绘制它`ggplot2`：
+
+注意！ggplot只能使用sf格式的元素，所以在使用`rnaturalearth` 时需要注意，返回的格式是sf。
+
+```{r}
+ggplot(data = world) +
+    geom_sf()
+```
+
+### 地图颜色 ( `geom_sf`)
+
+在许多方面，`sf`几何图形与常规几何图形没有区别，并且可以对其属性进行相同级别的控制来显示。这是一个示例，其中国家的多边形填充为绿色（参数`fill`），使用黑色作为国家的轮廓（参数`color`）
+
+```{r}
+ggplot(data = world) + 
+    geom_sf(color = "black", fill = "skyblue")
+```
+
+该包`ggplot2`允许使用更复杂的配色方案，例如数据的一个变量上的渐变。这是显示每个国家/地区人口的另一个示例。在此示例中，我们使用"viridis"色盲友好调色板进行颜色渐变（ `option = "plasma"`用于等离子变体），使用人口的平方根（存储在 对象的变量`POP_EST`中`world`）：
+
+```{r}
+library(viridis)
+ggplot(data = world) +
+    geom_sf(aes(fill = pop_est)) +
+    scale_fill_viridis(option = "c", trans = "sqrt")
+```
+
+### 投影和范围 ( `coord_sf`)
+
+该函数`coord_sf`允许处理坐标系，包括地图的投影和范围。默认情况下，地图将使用定义一个的第一层的坐标系（即按提供的顺序扫描），如果没有，则回退到 WGS84（纬度/经度，GPS 中使用的参考系统）。使用参数`crs`，可以覆盖此设置，并即时投影到任何投影。这可以使用任何有效的 PROJ4 字符串来实现（这里是以欧洲为中心的 ETRS89 Lambert Azimuthal Equal-Area 投影）：
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    coord_sf(crs = "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 +ellps=GRS80 +units=m +no_defs ")
+```
+
+地图的范围也可以在`coord_sf`中设置，实际上允许"缩放"感兴趣的区域，由 x 轴 ( `xlim`) 和 y 轴 ( `ylim`)上的限制提供。请注意，限制会自动扩展一小部分以确保数据和轴不重叠；它也可以关闭以完全匹配提供的限制`expand = FALSE`：
+
+```{r}
+ggplot(data = world) +
+    geom_sf() +
+    coord_sf(xlim = c(-102.15, -74.12), ylim = c(7.65, 33.97), expand = FALSE)
+```
+
+### 比例尺和指北针（包`ggspatial`）
+
+几个包可用于创建一个地图上的比例尺（例如 `prettymapr`，`vcd`，`ggsn`或`legendMap`）。我们在这里介绍包`ggspatial`，它提供了易于使用的功能......
+
+`scale_bar`这允许在`ggplot`地图中同时添加北方符号和比例尺。五个参数需要手动设置： `lon`，`lat`，`distance_lon`，`distance_lat`，和`distance_legend`。比例尺的位置必须在`lon`和`lat`参数中以经度/纬度指定。比例尺内的阴影距离由`distance_lon`参数控制。而其宽度由 决定`distance_lat`。此外，可以更改比例尺图例的字体大小（参数`legend_size`，默认为 3）。"N"北向符号后面的指北针也可以调整其长度 ( `arrow_length`)、与比例尺的距离 ( `arrow_distance`) 或 N 北向符号本身的大小 ( `arrow_north_size`，默认为 6)。请注意，所有距离 (`distance_lon`, `distance_lat`, `distance_legend`, `arrow_length`, `arrow_distance`) 在`"km"`默认情况下设置为`distance_unit`; 它们也可以用"nm"设置为海里，或用"mi"设置为英里。
+
+```{r}
+library(ggspatial)
+ggplot(data = world) +
+    geom_sf() +
+    annotation_scale(location = "bl", width_hint = 0.5)
+```
+
+国家名称和其他名称（`geom_text`和`annotate`）
+
+该`world`数据集已经包含国名和每个国家的重心（中详细信息）的坐标。我们可以利用这些信息来绘制国家名称，使用`world`作为一个经常 `data.frame`在`ggplot2`。该函数`geom_text`可用于使用地理坐标向地图添加文本层。该函数需要输入国家名称所需的数据，与世界地图的数据相同。同样，我们有一个非常灵活的控件可以在许多方面随意调整文本：
+
+-   大小（参数`size`）；
+
+-   对齐方式，默认情况下以提供的坐标为中心。可以使用参数`hjust`and水平或垂直调整文本`vjust`，它可以是 0（右/下）和 1（上/左）之间的数字或字符（"左"、"中"、"右"、"底部"、"中心"、"顶部"）。文本也可以使用参数`nudge_x`and 水平或垂直偏移`nudge_y`；
+
+-   文本的字体，例如它的颜色（参数`color`）或字体类型（`fontface`）；
+
+-   标签的重叠，使用参数`check_overlap`，删除重叠的文本。或者，当有很多重叠的标签时，该包`ggrepel`提供了一个 `geom_text_repel`功能，可以移动标签，使它们不重叠。
+
+-   对于文本标签，我们使用`st_centroid`, 从包中定义县的质心`sf`。然后我们`geometry`在空间数据框中将坐标与质心相结合 。该包`sf`是命令所必需的`st_centroid`。
+
+此外，该`annotate`函数可用于在特定位置添加单个字符串，如下所示添加墨西哥湾：
+
+
+
+### 最终地图
+
+现在要进行最后的润色，可以编辑地图的主题以使其更具吸引力。我们建议对`theme_bw`标准主题使用 ，但还有许多其他主题可供选择（例如参见`?ggtheme`中的`ggplot2`，或[`ggthemes`](https://cran.r-project.org/package=ggthemes)提供几个有用主题的包 ）。此外，可以调整特定的主题元素以获得最终结果：
+
+-   图例的位置：虽然在本例中没有用到，参数`legend.position`允许自动放置图例在特定位置（例如`"topright"`，`"bottomleft"`等）;
+
+-   地图上的网格线（经纬网）：使用`panel.grid.major`和 `panel.grid.minor`可以调整网格线。这里我们将它们设置为灰色和虚线类型，以便与国家边界线明确区分；
+
+-   地图背景：该参数`panel.background`可用于为背景（本质上是海洋）着色为淡蓝色；
+
+-   可以调整主题的更多元素，这里就不一一介绍了。我们建议读者参考该函数的文档`theme`。
+
+## 方法二：mapchina包（仅仅适合中国地图）
+
+```{r}
+library(mapchina)
+```
+
+调用一下mapchina，这里面自带了市级层面的中国数据，存在china这个变量里
+
+```{r}
+library(tidyverse)
+library(sf)
+
+ggplot(data = china) +
+        geom_sf(aes(fill = rank(Density))) +
+        scale_fill_distiller(palette = "BuPu", direction = 1) +
+        theme_bw() +
+        theme(legend.position = "none")
+```
+
+使用dplyr匹配变量，直接画就行了。
+
+该包还有画省级地图的教程，详见<https://github.com/xmc811/mapchina>
+
+## 方法三：ggmap（适合点图）
+
+日后补充
+
+## 方法三：tmap（适合填充图）
+
+日后补充
