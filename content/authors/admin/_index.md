@@ -47,6 +47,6 @@ Hi there, I am Ziqian Xia, an undergraduate student at [Nanchang University](htt
 
 **I will join [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html) in [Tongji University](https://en.tongji.edu.cn/) next year.**
 
-Ad Hoc Reviewer: *Current Research in Behavioral Sciences*
+Ad Hoc Reviewer: *Resources, Conservation & Recycling Advances* , *Current Research in Behavioral Sciences*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
