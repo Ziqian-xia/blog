@@ -26,6 +26,8 @@ url_video: ""
 ---
 
 这里汇总了一些公开的资源:
+## 视频
+-   [轻松上手Mendeley](https://www.bilibili.com/video/BV1y34y1k7Cx/)
 
 ## 元分析相关
 
@@ -48,3 +50,4 @@ url_video: ""
 ## 机器学习与文本挖掘
 
 -   [Vehicle-to-grid 文本数据](https://osf.io/zc7jb/)
+-
