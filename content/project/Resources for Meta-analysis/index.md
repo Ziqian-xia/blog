@@ -29,7 +29,7 @@ url_video: ""
 
 ## 元分析相关
 
--   元分析效应量提取
+-   [元分析效应量提取](https://ziqian-xia.tech/post/%E5%85%83%E5%88%86%E6%9E%90%E6%95%88%E7%9B%8A%E9%87%8F%E6%8F%90%E5%8F%96-%E4%BB%8E%E5%A8%83%E5%A8%83%E6%8A%93%E8%B5%B7/)
 
 -   [效应量转化Cheatsheet](https://github.com/Ziqian-xia/resource/blob/main/cheatsheet_v1.pdf)
 
