@@ -17,6 +17,9 @@ image:
   focal_point: ''
   preview_only: no
 projects: []
+output:
+  blogdown::html_page:
+    toc: true
 ---
 
 ## 引
@@ -128,20 +131,32 @@ d-Based效应量一般都是做实验的，一个控制组一个实验组这样�
 拿着实验组、控制组均值，带上标准差，直接算就行：
 
 $$
-d=\left(\bar{Y}_{1}-\bar{Y}_{2}\right) / S_{\text {Pooled }}
+d=\left(Y_{1}-Y_{2}\right)/S_{\text{Pooled}}
 $$
 
-`$$S_{\text {Pooled }}=\sqrt{\left[\left(\left(n_{1}-1\right) s_{1}^{2}+\left(n_{2}-1\right) s_{2}^{2}\right) /\left(n_{1}+n_{2}-2\right)\right]}$$`（不过做元分析，只需要提取出来就好，计算肯定是后面统一算的）
+
+
+$$
+S_{\text {Pooled }}=\sqrt{\left[\left(\left(n_{1}-1\right) s_{1}^{2}+\left(n_{2}-1\right) s_{2}^{2}\right) /\left(n_{1}+n_{2}-2\right)\right]}
+$$
+
+（不过做元分析，只需要提取出来就好，计算肯定是后面统一算的）
 
 #### 如果报告了两个均值之差的显著性
 
 把对于的***t***，***Z***，***F***检验拿出来就行。对于DID的情况，如果t没有直接报告，可以用之前的b/se的方法算。
 
-`\(d=t \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}\)`
+$$
+d=t \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}
+$$
 
-`\(d=Z \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}\)`
+$$
+d=Z \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}
+$$
 
-`\(d=\sqrt{\left[F\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}\)`
+$$
+d=\sqrt{\left[F\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}
+$$
 
 这一类其实涵盖了很多模型(回归、ANOVA等等都用上述的检验)
 
@@ -149,31 +164,35 @@ $$
 
 对于双尾t检验，拿到p就可以了（注意如果只用了\*，就取显著性的阈值）：
 
-`\(d=+/-t^{-1}(p / 2) \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}\)`
+$$
+d=+/-t^{-1}(p / 2) \sqrt{\left[\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right]}
+$$
 
 ### d-Based效应量的方差
 
 拿到d和N以后，真的一切都好说了
 
-`\(V[d]=\left(\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right)+\left(d^{2} / 2\left(n_{1}+n_{2}\right)\right)\)`
+$$
+V[d]=\left(\left(n_{1}+n_{2}\right) / n_{1} n_{2}\right)+\left(d^{2} / 2\left(n_{1}+n_{2}\right)\right)
+$$
 
 ### 这三家其实还有很多亲戚
 
 比如Hedge's g是d效应量的修正，Fishers'z 是r的进化版...这些关系都可以被轻易的转化。
 
-查看这个\[效应量转化Cheatsheet\](<https://github.com/Ziqian-xia/resource/blob/main/cheatsheet_v1.pdf)>获得更多的信息。
+查看这个[效应量转化Cheatsheet](https://github.com/Ziqian-xia/resource/blob/main/cheatsheet_v1.pdf)获得更多的信息。
 
 ### 一些计算资源
 
 除了R以外，还有很多很好的在线计算网站：  
-<https://www.campbellcollaboration.org/escalc/html/EffectSizeCalculator-SMD21.php>  
-  
+<https://www.campbellcollaboration.org/escalc/html/EffectSizeCalculator-SMD21.php>
+
 <https://www.escal.site/>
 
-<https://www.psychometrica.de/effect_size.html#transform>  
+<https://www.psychometrica.de/effect_size.html#transform>
 
 ------------------------------------------------------------------------
 
 The End
 
-祝大家元分析顺利！  
+祝大家元分析顺利！
