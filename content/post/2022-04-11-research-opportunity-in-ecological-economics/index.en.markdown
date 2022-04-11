@@ -1,5 +1,5 @@
 ---
-title: Ended - Research Opportunity in Ecological Economics
+title: **CLOSED** - Research Opportunity in Ecological Economics
 author: Ziqian Xia
 date: '2022-04-11'
 slug: research-opportunity-in-ecological-economics
