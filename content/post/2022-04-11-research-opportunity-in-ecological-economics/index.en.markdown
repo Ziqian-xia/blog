@@ -1,5 +1,5 @@
 ---
-title: Research Opportunity in Ecological Economics
+title: **CLOSED** - Research Opportunity in Ecological Economics
 author: Ziqian Xia
 date: '2022-04-11'
 slug: research-opportunity-in-ecological-economics
@@ -20,6 +20,12 @@ projects: []
 ---
 
 ![](images/join.jpg)
+
+**2022/04/11 17:32 更新**
+
+招募已经结束，以下是原文
+
+------------------------------------------------------------------------
 
 面向大一到大三本科生，[田西老师课题组](http://sem.ncu.edu.cn/szdw/szgk/js/79c83e7575f34bfca134a33cd2e17209.htm)现在开放一个科研训练机会。该项目基于省级课题，需求一名同学加入。
 
