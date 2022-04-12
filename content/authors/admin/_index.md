@@ -5,15 +5,15 @@ education:
   - course: Master in Public Policy
     institution: Tongji University
     year: 2022-2024
-  - course: BSc in Economic Statistics
+  - course: BSc in Economic Statistics with minor in Applied Psychology
     institution: Nanchang University
     year: 2018-2022
 email: "Ziqian.research@gmail.com"
 highlight_name: true
 interests:
 - Environmental Behaviour
-- Environmental Economics
-- Meta Science
+- Climate Change
+- Research Synthesis
 organizations:
 - name: Nanchang University
   url: http://english.ncu.edu.cn/
