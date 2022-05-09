@@ -5,9 +5,12 @@ education:
   - course: Master in Public Policy
     institution: Tongji University
     year: 2022-2024
-  - course: BSc in Economic Statistics with minor in Applied Psychology
+  - course: BEc in Economic Statistics
     institution: Nanchang University
     year: 2018-2022
+  - course: BSc(minor) in Applied Psychology
+    institution: Nanchang University
+    year: 2020-2022    
 email: "Ziqian.research@gmail.com"
 highlight_name: true
 interests:
