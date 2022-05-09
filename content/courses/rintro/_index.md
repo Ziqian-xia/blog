@@ -45,7 +45,7 @@ There are no prerequisites for the first course.
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
-Every Friday, 18:00 Beijing time, Online stream.
+45 mins per session.
 {{< /spoiler >}}
 
 {{< spoiler text="When the course begins? " >}}
