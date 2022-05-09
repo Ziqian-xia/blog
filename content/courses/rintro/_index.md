@@ -33,9 +33,8 @@ The course is fully open and free of charge, we will hold approximately 5~6 sess
 5. Data visualization with ggplot (2022.6.03)
 6. Other essentials (Regression, Meta-analysis, QCA; TBA)
 
-{{< list_children >}}
 
-## Meet your instructor
+## Maintainer
 
 {{< mention "admin" >}}
 

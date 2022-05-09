@@ -18,6 +18,9 @@ main:
   - name: Talks
     url: '#talks'
     weight: 50
+  - name: Courses
+    url: 'https://ziqian-xia.tech/courses/'
+    weight: 55
   - name: Contact
     url: '#contact'
     weight: 70
