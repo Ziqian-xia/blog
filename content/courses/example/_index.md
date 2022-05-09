@@ -1,10 +1,12 @@
 ---
-date: "2021-01-24"
+date: "2022-05-01"
 linkTitle: Data Science
-summary: An example of using Wowchemy's Book layout for publishing online courses.
-title: "\U0001F4CA Learn Data Science"
+summary: Open Crash Course on R Programming
+title: "Introduction to R Programming"
 type: book
 ---
+
+**Note**: This course is taught in *Chinese*
 
 {{< figure src="featured.jpg" >}}
 
@@ -12,15 +14,24 @@ type: book
 
 ## What you will learn
 
-- Fundamental {{<hl>}}Python programming skills{{</hl>}}
+This gentle course provides a hands-on experience to learn the basics of modern R using RStudio and the Tidyverse method.
+
+- Fundamental {{<hl>}}R programming skills{{</hl>}}
 - {{<hl>}}Statistical concepts{{</hl>}} and how to apply them in practice
-- Gain experience with the {{<hl>}}Scikit{{</hl>}}, including data visualization with {{<hl>}}Plotly{{</hl>}} and data wrangling with {{<hl>}}Pandas{{</hl>}}
+- Gain experience with {{<hl>}} social science models {{</hl>}}, including data visualization with {{<hl>}} ggplot2 {{</hl>}} and data wrangling with {{<hl>}} tidyverse {{</hl>}}
 
 ## Program overview
 
-The demand for skilled data science practitioners is rapidly growing. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi.
+The course is fully open and free of charge, we will hold approximately 5~6 session via online seminar. The workshop will not be recorded and all the recordings of past seminars can be found at [Bilibili.com](https://www.bilibili.com/).
 
-## Courses in this program
+## Syllabus
+
+1. Warm up session (2022.5.6; **expired**, no recording for this session.)
+2. Data structure (2022.5.13)
+3. Flow control (2022.5.20)
+4. Data wrangling with tidyverse (2022.5.27)
+5. Data visualization with ggplot (2022.6.03)
+6. Other essentials (Regression, Meta-analysis, QCA; TBA)
 
 {{< list_children >}}
 
@@ -35,7 +46,13 @@ There are no prerequisites for the first course.
 {{< /spoiler >}}
 
 {{< spoiler text="How often do the courses run?" >}}
-Continuously, at your own pace.
+Every Friday, 18:00 Beijing time, Online stream.
 {{< /spoiler >}}
 
-{{< cta cta_text="Begin the course" cta_link="python" >}}
+{{< spoiler text="When the course begins? " >}}
+Every Friday, 18:00 Beijing time, Online stream.
+{{< /spoiler >}}
+
+{{< spoiler text="How to get involved?" >}}
+The link to the conference will be released on this page before it starts.
+{{< /spoiler >}}
