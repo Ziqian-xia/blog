@@ -22,11 +22,11 @@ This gentle course provides a hands-on experience to learn the basics of modern 
 
 ## Program overview
 
-The course is fully open and free of charge, we will hold approximately 5~6 session via online seminar. The workshop will not be recorded and all the recordings of past seminars can be found at [Bilibili.com](https://www.bilibili.com/).
+The course is fully open and free of charge, we will hold approximately 5~6 session via online seminar. The workshop will be recorded and all the recordings of past seminars can be found at [Bilibili.com](https://www.bilibili.com/).
 
 ## Syllabus
 
-1. Warm up session (2022.5.6; **expired**, no recording for this session.)
+1. Warm up session (2022.5.6; **ended**, no recording for this session.)
 2. Data structure (2022.5.13)
 3. Flow control (2022.5.20)
 4. Data wrangling with tidyverse (2022.5.27)
