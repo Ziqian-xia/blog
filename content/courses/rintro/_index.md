@@ -33,6 +33,8 @@ The course is fully open and free of charge, we will hold approximately 5~6 sess
 5. Data visualization with ggplot (2022.6.03)
 6. Other essentials (Regression, Meta-analysis, QCA; TBA)
 
+## Textbooks and slides
+We will use [R for Data Science](https://r4ds.had.co.nz/) as our main textbook, this book is fully available at [bookdown.org](bookdown.org). Slides are adopted from 《R语言编程—基于tidyverse》.
 
 ## Maintainer
 
