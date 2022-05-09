@@ -38,5 +38,5 @@ design:
 ---
 
 {{% callout note %}}
-Quickly discover relevant content by [filtering publications](./publication/).
+Click [**here**](https://ziqian-xia.tech/publist/) to see **full publication list**
 {{% /callout %}}
