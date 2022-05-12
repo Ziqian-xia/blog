@@ -27,7 +27,7 @@ The course is fully open and free of charge, we will hold approximately 5~6 sess
 ## Syllabus
 
 1. Warm up session (2022.5.6; **ended**, no recording for this session.)
-2. Data structure (2022.5.13)
+2. Data structure (2022.5.13; [links](https://meeting.tencent.com/dm/GqHr1Nn5ynPw))
 3. Flow control (2022.5.20)
 4. Data wrangling with tidyverse (2022.5.27)
 5. Data visualization with ggplot (2022.6.03)
