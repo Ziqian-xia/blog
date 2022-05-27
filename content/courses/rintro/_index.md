@@ -29,7 +29,7 @@ The course is fully open and free of charge, we will hold approximately 5~6 sess
 1. Warm up session (2022.5.6; **ended**, no recording for this session.)
 2. Data structure (2022.5.13; **ended**，[bilibili links](https://www.bilibili.com/video/BV1jZ4y187P6?spm_id_from=333.999.0.0))
 3. Flow control (2022.5.20; **ended**, [bilibili links](https://www.bilibili.com/video/BV1it4y1W7yK/))
-4. Data wrangling with tidyverse (2022.5.27)
+4. Data wrangling with tidyverse (2022.5.27; [links](https://meeting.tencent.com/dm/kDSrliQzh57S))
 5. Data visualization with ggplot (2022.6.03)
 6. Other essentials (Regression, Meta-analysis, QCA; TBA)
 
