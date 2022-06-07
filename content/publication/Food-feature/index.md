@@ -1,40 +1,48 @@
 ---
-abstract: "Promoting pro-environmental behavior is an effective means of reducing carbon emissions at the individual end, but the measurement of behavior has long been a problem for scholars. Especially in environmental psychology community, the complexity of social policies and habitat implies greater difficulty in measuring. Due to the limitations of traditional questionnaire, laboratory, and naturalistic observation methods, environmental psychologists need more realistic, accurate, and cost-effective ways to measure behavior. The rapid development of IoT technology lights up the hope for achieving this goal, and its large-scale popularization will bring great changes to the research community. This paper reviews the current methods and their limitations, proposes a framework for measuring behavior using IoT devices, and points out its future research directions."
+abstract: "To reduce food waste, many behavioural intervention experiments have been conducted worldwide, but their effectiveness remains unclear. To assess their impacts, we present a meta-analysis based on 58 studies, selected after screening 1143 papers, which were conducted between 2011 and 2021 covering 26 533 participants. We confirm that behavioural interventions have a moderate effect ($z$ = 0.22) on food waste reduction, with education programs having the most significant impact and informational feedback having the least. We also show that interventions in elementary and middle school settings marginally improve the overall effect size (P < 0.1), and controlled experiments exhibit a higher effect size compared to pre-post experiments in education interventions (P < 0.05). Finally, we present a roadmap to guide future research in the next decade to further improve our understanding on the effects of behavioural interventions to reduce food waste."
 author_notes:
-- Main Investigator
-- Co-investigator
+- Co-first author 
+- Co-first author 
+- Contributors
+- Contributors
+- Contributors
+- Contributors
 authors:
+- Xi Tian
 - admin
-- Yurong Liu
+- Jinliang Xie
+- Chao Zhang
+- Yaobin Liu1
+- Ming Xu
 
-date: "2021-09-01T00:00:00Z"
-doi: "https://doi.org/10.1016/j.crbeha.2021.100055"
-featured: false
+date: "2022-06-01T00:00:00Z"
+doi: "https://doi.org/10.1088/1748-9326/ac72b6"
+featured: true
 image:
-  caption: 'Image credit: [**Wiki**](https://en.wikipedia.org/wiki/Waste_sorting#/media/File:NEA_recycling_bins,_Orchard_Road.JPG)'
+  caption: 'Image credit: Wiki'
   focal_point: ""
   preview_only: false
 projects: []
-publication: '*Current Research in Behavioral Sciences*
-Volume 2, November 2021, 100055'
+publication: '*Environmental Research Letters*
+Volume 17, Number 6 064041'
 publication_short: ""
 publication_types:
 - "2"
-publishDate: "2021-08-10T00:00:00Z"
-summary: This paper reviews the current methods and their limitations, proposes a framework for measuring behavior using IoT devices, and points out its future research directions."
+publishDate: "2022-06-7T00:00:00Z"
+summary: To reduce food waste, many behavioural intervention experiments have been conducted worldwide, but their effectiveness remains unclear. To assess their impacts, we present a meta-analysis based on 58 studies, selected after screening 1143 papers"
 tags:
-- Perspective Article
-title: "Aiding pro-environmental behavior measurement by Internet of Things"
+- Research Article
+title: "A meta-analytical review of intervention experiments to reduce food waste"
 url_code: 
 url_dataset: ""
-url_pdf: https://doi.org/10.1016/j.crbeha.2021.100055
+url_pdf: https://doi.org/10.1088/1748-9326/ac72b6
 url_poster: ""
 url_project: ""
  
 ---
 
 {{% callout note %}}
-Know more about the article by visit https://doi.org/10.1016/j.crbeha.2021.100055 .
+Know more about the article by visit https://doi.org/10.1088/1748-9326/ac72b6 .
 {{% /callout %}}
 
 
