@@ -12,7 +12,7 @@ authors:
 - admin
 - Jinliang Xie
 - Chao Zhang
-- Yaobin Liu1
+- Yaobin Liu
 - Ming Xu
 
 date: "2022-06-01T00:00:00Z"
@@ -24,7 +24,7 @@ image:
   preview_only: false
 projects: []
 publication: '*Environmental Research Letters*
-Volume 17, Number 6 064041'
+Volume 17, Number 6, 064041'
 publication_short: ""
 publication_types:
 - "2"
