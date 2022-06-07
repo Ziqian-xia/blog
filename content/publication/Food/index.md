@@ -29,7 +29,7 @@ publication_short: ""
 publication_types:
 - "2"
 publishDate: "2022-06-7T00:00:00Z"
-summary: To reduce food waste, many behavioural intervention experiments have been conducted worldwide, but their effectiveness remains unclear. To assess their impacts, we present a meta-analysis based on 58 studies, selected after screening 1143 papers"
+summary: To reduce food waste, many behavioural intervention experiments have been conducted worldwide, but their effectiveness remains unclear. To assess their impacts, we present a meta-analysis based on 58 studies, selected after screening 1143 papers
 tags:
 - Research Article
 title: "A meta-analytical review of intervention experiments to reduce food waste"
