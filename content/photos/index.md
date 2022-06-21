@@ -11,24 +11,24 @@ view: 2
 
 ### 与敬爱的老师们
 
-![刘校长](images/lyb.jpg)
+![刘校长](image/lyb.jpg)
 
-![](images/sl.jpg)
+![](image/sl.jpg)
 
-![](images/xt.jpg)
+![](image/xt.jpg)
 
-![](images/pdy.jpg)
+![](image/pdy.jpg)
 
-![](images/wjj.jpg)
+![](image/wjj.jpg)
 
 ### 与小伙伴们
 
-![](images/group.jpg)
+![](image/group.jpg)
 
-![](images/group1.jpg)
+![](image/group1.jpg)
 
-![](images/preview.jpg)
+![](image/preview.jpg)
 
 # 特别放送
 
-![](images/zsj.jpg)
+![](image/zsj.jpg)
