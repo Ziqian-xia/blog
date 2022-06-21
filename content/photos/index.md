@@ -40,7 +40,7 @@ view: 2
 
 寝室的毕业纪念册!
 
-![](image/autograph.png.jpg)
+![](image/autograph.png)
 
 ### 特别放送
 
