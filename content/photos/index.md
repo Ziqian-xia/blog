@@ -38,6 +38,10 @@ view: 2
 
 ![](image/preview.jpg)
 
+寝室的毕业纪念册!
+
+![](image/autograph.png.jpg)
+
 ### 特别放送
 
 ![](image/zsj.jpg)
