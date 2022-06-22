@@ -56,4 +56,4 @@ Ad Hoc Reviewer:
 - *Resources, Conservation & Recycling Advances* 
 - *Current Research in Behavioral Sciences*
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}.   View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
