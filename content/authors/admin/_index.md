@@ -8,7 +8,7 @@ education:
   - course: BEc in Economic Statistics
     institution: Nanchang University
     year: 2018-2022
-  - course: BSc(minor) in Applied Psychology
+  - course: BSc (minor) in Applied Psychology
     institution: Nanchang University
     year: 2020-2022    
 email: "Ziqian.research@gmail.com"
@@ -18,8 +18,8 @@ interests:
 - Climate Change
 - Research Synthesis
 organizations:
-- name: Nanchang University
-  url: http://english.ncu.edu.cn/
+- name: Tongji University
+  url: https://en.tongji.edu.cn/
 role: Undergraduate Student
 social:
 - icon: envelope
@@ -42,13 +42,15 @@ superuser: true
 title: Ziqian Xia (夏子谦)
 ---
 
-Hi there, I am Ziqian Xia, an undergraduate student at [Nanchang University](https://www.ncu.edu.cn) as well as a primary researcher at [Xi tian's group](http://sem.ncu.edu.cn/szdw/szgk/js/79c83e7575f34bfca134a33cd2e17209.htm).
+Hi there, I am Ziqian Xia, an incoming graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
 
-- I am interested in research on environmental behavior and environmental economics. Currently I am trying to measure pro-environmental behavior using IoT data. See [my research section](#featured) for detail.
+- I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to measure and precisely intervene pro-environmental behavior using IoT-based techniques. See [my research section](#featured) for detail.
 
-- I am a fan of [R](https://www.rstudio.com) and I enjoy using it for modeling and visualization. I am currently working on a visualization package that help figures easily meets the publication requirements. 
+- I am a fan of [R](https://www.rstudio.com) and I enjoy using it for modeling and visualization. I am currently working on a visualization package that help figures easily meet the publication requirements. Also, I made an Intro to R Programming course, which is streamingevery week. The recordings can be found [here](https://ziqian-xia.tech/courses/rintro/).
 
-**I will join [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html) in [Tongji University](https://en.tongji.edu.cn/) next year.**
+Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm).
+
+**I am actively looking for a Ph.D. position, please feel free to contact me.**
 
 Ad Hoc Reviewer: 
 - *Resources, Conservation & Recycling Advances* 
