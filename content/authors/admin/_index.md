@@ -46,11 +46,13 @@ Hi there, I am Ziqian Xia, an incoming graduate student at [Tongji University](h
 
 - I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to measure and precisely intervene pro-environmental behavior using IoT-based techniques. See [my research section](#featured) for detail.
 
-- I am a fan of [R](https://www.rstudio.com) and I enjoy using it for modeling and visualization. I am working on a visualization package that help figures easily meet the publication requirements. Also, I made an Intro to R Programming course, which is streaming every week. The recordings can be found [here](https://ziqian-xia.tech/courses/rintro/).
+- I am a heavy user of [R](https://www.rstudio.com) and I enjoy using it for modeling and visualization. I am working on a visualization package that help figures easily meet the publication requirements. Also, I made an Intro to R Programming course, which is streaming every week. The recordings can be found [here](https://ziqian-xia.tech/courses/rintro/).
 
 Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm).
 
 **I am actively looking for a Ph.D. position, please feel free to contact me.**
+
+My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
 Ad Hoc Reviewer: 
 - *Resources, Conservation & Recycling Advances* 
