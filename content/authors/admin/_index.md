@@ -54,7 +54,7 @@ Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academ
 
 My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
-Handling Editor of [PROCEED](https://www.proceedevidence.info/user/team) affiliated with [Environmental Evidence Journal](https://environmentalevidencejournal.biomedcentral.com/).
+Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/).
 
 Ad Hoc Reviewer: 
 - *Resources, Conservation & Recycling Advances* 
