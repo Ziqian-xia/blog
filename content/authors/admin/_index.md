@@ -42,7 +42,7 @@ superuser: true
 title: Ziqian Xia (夏子谦)
 ---
 
-Hi there, I am Ziqian Xia, an incoming graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
+Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
 
 - I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to measure and precisely intervene pro-environmental behavior using IoT-based techniques. See [my research section](#featured) for detail.
 
