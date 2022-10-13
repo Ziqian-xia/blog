@@ -15,7 +15,7 @@ image:
   preview_only: false
 projects: []
 publication: '*Nature Reviews Psychology*
-, October 2022, 105775'
+, October 2022'
 publication_short: ""
 publication_types:
 - "2"
