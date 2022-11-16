@@ -7,7 +7,7 @@ main:
 
 
   - name: Publications
-    url: '#featured'
+    url: 'https://ziqian-xia.tech/publist/'
     weight: 30
   - name: Experiences
     url: '#experience'
