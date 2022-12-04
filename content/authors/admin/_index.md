@@ -58,6 +58,7 @@ Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affil
 
 Ad Hoc Reviewer: 
 - *Resources, Conservation & Recycling Advances* 
+- *Frontiers in Earth Science*
 - *Current Research in Behavioral Sciences*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
