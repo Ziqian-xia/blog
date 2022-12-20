@@ -21,6 +21,9 @@ main:
   - name: Courses
     url: 'https://ziqian-xia.tech/courses/'
     weight: 55
+  - name: Family
+    url: 'https://ziqian-xia.tech/family/'
+    weight: 60
   - name: Contact
     url: '#contact'
     weight: 70
