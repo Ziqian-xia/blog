@@ -62,6 +62,10 @@ view: 2
 
 ##### LINKS TO
 
+[最后的话](https://ziqian-xia.tech/finalwords/)
+
+##### LINKS TO
+
 [家庭页](https://ziqian-xia.tech/family/)
 
 
