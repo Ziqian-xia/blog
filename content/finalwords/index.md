@@ -2,7 +2,7 @@
 header:
   caption: ""
   image: ""
-title: 最后的话
+title: 告白/最后的话
 type: page
 view: 2
 ---
