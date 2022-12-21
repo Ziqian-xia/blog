@@ -11,7 +11,9 @@ View it on [ORCID](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024)
 
 **Xia, Z.** (2022). Digital interventions for a sustainable future. *Nature Reviews Psychology*, 1-1.
 
-**Xia, Z.**, Ye, J., Zhou, Y., Howe, P. D., Xu, M., Tan, X., ... & Zhang, C. (2022). A Meta-analysis of the relationship between Climate Change Experience and Climate Change Perception. *Environmental Research Communications*.
+**Xia, Z.**, Ye, J., Zhou, Y., Howe, P. D., Xu, M., Tan, X., ... & Zhang, C. (2022). ADo Behavioural Interventions Enhance Waste Recycling Practices?  Evidence from an extended meta-analysis. *Journal of Cleaner Production*.
+
+**Xia, Z.**, Yanjun, G., ... Tan, X. & Zhang, C. (2022). A Meta-analysis of the relationship between Climate Change Experience and Climate Change Perception. *Environmental Research Communications*.
 
 Fan, J., Liu, G., **Xia, Z.** & Cai, S. (2022). A bibliometric analysis of climate change risk perception: Hot spots, trends and improvements. *Frontiers in Environmental Science*.
 
