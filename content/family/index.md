@@ -14,4 +14,4 @@ Welcome to our family of four little tigers! We are a fiercely loyal and loving 
 
 ##### LINKS TO
 
-[My Confessions (In Chinese)](https://ziqian-xia.tech/sorry/)
+[My Confessions (In Chinese)](https://ziqian-xia.tech/)
