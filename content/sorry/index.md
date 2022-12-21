@@ -60,12 +60,12 @@ view: 2
 
 ![](image/qh.jpg)
 
-##### LINKS TO
+##### 链接到...
 
-[最后的话](https://ziqian-xia.tech/finalwords/)
+[给宝宝最后的话](https://ziqian-xia.tech/finalwords/)
 
-##### LINKS TO
+##### 链接到...
 
-[家庭页](https://ziqian-xia.tech/family/)
+[我们的家(In English)](https://ziqian-xia.tech/family/)
 
 
