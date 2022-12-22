@@ -9,6 +9,8 @@ view: 2
 
 #### 这个页面属于我永远的宝贝
 
+{{< staticref "uploads/一生等待小狮子.pdf" "newtab" >}}手写版{{< /staticref >}}
+
 ### 我的忏悔与挽回
 
 亲爱的宝，见信如晤
