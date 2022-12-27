@@ -42,8 +42,6 @@ superuser: true
 title: Ziqian Xia (夏子谦)
 ---
 
-*插播：谢谢大家关心，我们重归于好了！*
-
 Hi there, I am Ziqian Xia, a research assistant at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
 
 - I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to measure and precisely intervene pro-environmental behavior using IoT-based techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
@@ -62,5 +60,6 @@ Ad Hoc Reviewer:
 - *Resources, Conservation & Recycling Advances* 
 - *Frontiers in Earth Science*
 - *Current Research in Behavioral Sciences*
+- *Environmental Evidence*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
