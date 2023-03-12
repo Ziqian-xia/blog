@@ -37,6 +37,9 @@ social:
 - icon: github
   icon_pack: fab
   link: https://github.com/ziqian-xia
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao
   
 superuser: true
 title: Ziqian Xia (夏子谦)
@@ -46,7 +49,7 @@ Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.
 
 - I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to measure and precisely intervene pro-environmental behavior using IoT-based techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
 
-- I am a heavy user of [R](https://www.rstudio.com) and I enjoy using it for modeling and visualization. I am working on a visualization package that help figures easily meet the publication requirements. Also, I made an Intro to R Programming course, which is streaming every week. The recordings can be found [here](https://ziqian-xia.tech/courses/rintro/).
+- I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. 
 
 Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm). I was also trained in research synthesis at [UMich](https://umich.edu/).
 
@@ -57,6 +60,8 @@ My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://
 Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/).
 
 Ad Hoc Reviewer: 
+- *Global Environmental Change* 
+- *Environment, Development and Sustainability*
 - *Resources, Conservation & Recycling Advances* 
 - *Frontiers in Earth Science*
 - *Current Research in Behavioral Sciences*
