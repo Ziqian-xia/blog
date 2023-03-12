@@ -9,6 +9,8 @@ view: 2
 
 View it on [ORCID](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024)
 
+View it on [Google Scholar](https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao)
+
 **Xia, Z.** (2022). Digital interventions for a sustainable future. *Nature Reviews Psychology*, 1-1.
 
 **Xia, Z.**, Gu, Y., ... Tian, X. & Zhang, C. (2022). Do Behavioural Interventions Enhance Waste Recycling Practices?  Evidence from an extended meta-analysis. *Journal of Cleaner Production*.
