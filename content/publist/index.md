@@ -11,7 +11,11 @@ View it on [ORCID](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024)
 
 View it on [Google Scholar](https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao)
 
-**Xia, Z.** (2022). Digital interventions for a sustainable future. *Nature Reviews Psychology*, 1-1.
+**Xia, Z.**, ..., Zhang, C. et al. Growing climate change perception but rising regional disparities in China. (Submitted to ***Nature Communications***)
+
+D, Xu., T, Bai., ..., **Xia, Z.**, ..., Zhou, Y. et al. Urban greening effectively curbs warming in Chinese cities. (Under review at ***Nature Cites***)
+
+**Xia, Z.** (2022). Digital interventions for a sustainable future. ***Nature Reviews Psychology***, 1-1.
 
 **Xia, Z.**, Gu, Y., ... Tian, X. & Zhang, C. (2022). Do Behavioural Interventions Enhance Waste Recycling Practices?  Evidence from an extended meta-analysis. *Journal of Cleaner Production*.
 
