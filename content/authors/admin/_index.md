@@ -47,7 +47,7 @@ title: Ziqian Xia (夏子谦)
 
 Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html).
 
-- I am interested in research on environmental behavior and climate change mitigation/adaptation. Currently I am trying to understand climate change mitigation / adaptation behavior using IoT-based and remote sensing techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
+- I am interested in research on the human and policy dimensions of climate change. Currently I am trying to understand climate change mitigation / adaptation behavior using IoT-based and remote sensing techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
 
 - I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. 
 
