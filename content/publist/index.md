@@ -21,7 +21,7 @@ D, Xu., T, Bai., ..., **Xia, Z.**, ..., Zhou, Y. et al. Urban greening effective
 
 **Xia, Z.**, Zhang, S., Tian, X., & Liu, Y. (2021). Understanding waste sorting behavior and key influencing factors through internet of things: Evidence from college student community. *Resources, Conservation and Recycling*, 174, 105775. 
 
-Zhang, S., **Xia, Z.**, Zhang, C., & Tian, X. (2023). Green Illusions in Self-Reporting? Reassessing the Intention-Behavior Gap in Waste Recycling Behaviors. Waste Management. (Co-first author, Journal IF 2022: 8.81)
+Zhang, S., **Xia, Z.**, Zhang, C., & Tian, X. (2023). Green Illusions in Self-Reporting? Reassessing the Intention-Behavior Gap in Waste Recycling Behaviors. Waste Management. (**Co-first author**, Journal IF 2022: 8.81)
 
 **Xia, Z.**, Ye, J., Zhou, Y., Howe, P. D., Xu, M., Tan, X., ... & Zhang, C. (2022). A Meta-analysis of the relationship between Climate Change Experience and Climate Change Perception. *Environmental Research Communications*.
 
