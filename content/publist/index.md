@@ -39,7 +39,7 @@ Huang, L., **Xia, Z.**, & Cao, Y. (2022). A Bibliometric Analysis of Global Fine
 
 Yang, X., …, **Xia, Z.**, …, Zhang, C. et al. Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. (Submitted to ***Ecological Economics***)
 
-Fan, J.,**Xia, Z.**, …, Yang, X. et al. Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. (Under revision at ***Applied Economics Letters***)
+Fan, J.,**Xia, Z.**, …, Yang, X. et al. Export stability and air pollution: evidence from 56 major exporting countries. (Under revision at ***Applied Economics Letters***)
 
 Tian, X., …, **Xia, Z.**, …, Xie, J. et al. Economic analysis of seven typical echelon utilization scenarios for retired lithium iron phosphate battery in China. (Under review at ***Applied Energy***)
 
