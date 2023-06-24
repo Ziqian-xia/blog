@@ -34,3 +34,5 @@ Xie, J., **Xia, Z.**, Tian, X., & Liu, Y. (2023). Nexus and synergy between the 
 **Xia, Z.**, & Liu, Y. (2021). Aiding pro-environmental behavior measurement by Internet of Things. *Current Research in Behavioral Sciences*, 2, 100055.
 
 Huang, L., **Xia, Z.**, & Cao, Y. (2022). A Bibliometric Analysis of Global Fine Roots Research in Forest Ecosystems during 1992–2020. *Forests*, 13(1), 93.
+
+**Xia, Z.**, ..., Zhang, C. et al. Government efforts in environmental improvement unintentionally crowd out individual pro-environmental intentions. (Submitted to ***Ecological Economics***)
