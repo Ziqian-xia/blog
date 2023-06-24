@@ -36,3 +36,19 @@ Xie, J., **Xia, Z.**, Tian, X., & Liu, Y. (2023). Nexus and synergy between the 
 Huang, L., **Xia, Z.**, & Cao, Y. (2022). A Bibliometric Analysis of Global Fine Roots Research in Forest Ecosystems during 1992–2020. *Forests*, 13(1), 93.
 
 **Xia, Z.**, ..., Zhang, C. et al. Government efforts in environmental improvement unintentionally crowd out individual pro-environmental intentions. (Submitted to ***Ecological Economics***)
+
+Yang, X., …, **Xia, Z.**, …, Zhang, C. et al. Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. (Submitted to ***Ecological Economics***)
+
+Fan, J.,**Xia, Z.**, …, Yang, X. et al. Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. (Under revision at ***Applied Economics Letters***)
+
+Tian, X., …, **Xia, Z.**, …, Xie, J. et al. Economic analysis of seven typical echelon utilization scenarios for retired lithium iron phosphate battery in China. (Under review at ***Applied Energy***)
+
+Xie, J., …, **Xia, Z.**, …, Tian, X. et al. A Spiral Infinite-life-cycle Assessment Model for Measuring the Environmental Performance of Circular Economy Systems. (Under review at ***Science of the Total Environment***)
+
+Tian, X., …, **Xia, Z.** et al. Environmental impact and economic assessment of recycling lithium iron phosphate batteries: Comparison of major processes in China. (Under revision at ***Resources, Conservation & Recycling***)
+
+Tian, X., …, **Xia, Z.** et al. Design and Simulation of a Cross-regional Collaborative Recycling System for Secondary Resources: A Case of Lead-acid Batteries. (Under revision at ***Journal of Environmental Management***)
+
+Xie, J., …, **Xia, Z.**, …, Xu, M. et al. Structure of Global Trade Network Embedding Water Scarcity Risks. (Submitting to ***International Journal of Logistics Research and Applications***)
+
+Yang, J., …, **Xia, Z.**, …, Bi, J. et al. Measuring climate change perception in China using mental images: A nationwide open-ended survey. (Submitting to ***Global Environmental Change***)
