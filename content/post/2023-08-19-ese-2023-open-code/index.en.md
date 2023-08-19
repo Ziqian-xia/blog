@@ -22,9 +22,9 @@ This is the open code repo for ESE 2023.
 ## Table of Contents
 
 1. [K-Means Clustering Tutorial](#k-means)
-2. [CART Regression with Public Dataset](#CART-regression)
-3. [Unveiling the Power of Neural Networks](#Neural-Network)
-4. [Conclusion](#Further-Reading)
+2. [CART Regression with Public Dataset](#cart-regression)
+3. [Unveiling the Power of Neural Networks](#neural-network)
+4. [Conclusion](#further-reading)
 
 
 ## K Means
