@@ -21,13 +21,13 @@ This is the open code repo for ESE 2023.
 
 ## Table of Contents
 
-1. [K-Means Clustering Tutorial](##k-means)
+1. [K-Means Clustering Tutorial](#k-means)
 2. [CART Regression with Public Dataset](##CART_regression)
 3. [Unveiling the Power of Neural Networks](##Neural_Network)
 4. [Conclusion](##Further_Reading)
 
 
-## K-Means
+## K Means
 
 In this tutorial, we will explore the popular k-means clustering algorithm using Python. K-means is an unsupervised machine learning technique that divides a dataset into a given number of clusters. We'll use the Iris dataset and walk through the process of determining the optimal number of clusters using a scree plot.
 
