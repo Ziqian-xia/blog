@@ -21,17 +21,17 @@ This is the open code repo for ESE 2023.
 
 ## Table of Contents
 
-1. [K-Means Clustering Tutorial](#K-Means)
-2. [CART Regression with Public Dataset](#CART_regression)
-3. [Unveiling the Power of Neural Networks](#Neural_Network)
-4. [Conclusion](#Further_Reading)
+1. [K-Means Clustering Tutorial]('## K-Means')
+2. [CART Regression with Public Dataset](##CART_regression)
+3. [Unveiling the Power of Neural Networks](##Neural_Network)
+4. [Conclusion](##Further_Reading)
 
 
-# K-Means
+## K-Means
 
 In this tutorial, we will explore the popular k-means clustering algorithm using Python. K-means is an unsupervised machine learning technique that divides a dataset into a given number of clusters. We'll use the Iris dataset and walk through the process of determining the optimal number of clusters using a scree plot.
 
-## Import Libraries
+### Import Libraries
 
 ```python
 import numpy as np
@@ -42,7 +42,7 @@ from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
 ```
 
-## Load and Prepare Data
+### Load and Prepare Data
 
 Let's start by loading the Iris dataset and standardizing the features:
 
@@ -54,7 +54,7 @@ scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
 ```
 
-## Scree Plot for Optimal Number of Clusters
+### Scree Plot for Optimal Number of Clusters
 
 We need to decide on the optimal number of clusters (k) for our k-means algorithm. One way to do this is by using a scree plot:
 
@@ -75,7 +75,7 @@ plt.show()
 
 From the scree plot, identify the "elbow" point where the decrease in the sum of squared distances starts to slow down. This point suggests the optimal number of clusters.
 
-## Perform K-Means Clustering
+### Perform K-Means Clustering
 
 Assuming we find the optimal k to be 3, let's perform k-means clustering:
 
@@ -88,7 +88,7 @@ data_with_clusters = pd.DataFrame(data.data, columns=data.feature_names)
 data_with_clusters['Cluster'] = clusters
 ```
 
-## Visualize the Clusters
+### Visualize the Clusters
 
 You can visualize the clusters by creating scatter plots of different feature pairs:
 
@@ -105,9 +105,9 @@ Repeat the visualization for other pairs of features.
 That's it! You've successfully performed k-means clustering using Python and determined the optimal number of clusters using a scree plot. Feel free to explore this technique with other datasets and experiment with different values of k.
 
 
-#CART_regression
+## CART_regression
 
-## CART Regression with Diabetes Dataset
+### CART Regression with Diabetes Dataset
 
 In the previous section, we explored the world of k-means clustering. Now, let's dive into another powerful machine learning technique: Classification and Regression Trees (CART). CART is a decision tree-based algorithm that can be used for both classification and regression tasks.
 
@@ -179,8 +179,8 @@ In this section, we covered the basics of CART regression, from loading the data
 
 Next, we'll continue our journey into machine learning with more advanced techniques.
 
-#Neural_Network
-## Neural Networks: Unveiling the Power of Deep Learning
+## Neural_Network
+### Neural Networks: Unveiling the Power of Deep Learning
 
 In the realm of machine learning, Neural Networks (NNs) have risen to prominence due to their exceptional capabilities in capturing complex patterns in data. A Neural Network is inspired by the human brain's structure and consists of interconnected neurons organized in layers.
 
@@ -256,7 +256,7 @@ plt.show()
 In this section, we've delved into the world of Neural Networks, exploring their architecture and capabilities. By applying a simple Neural Network to the Iris dataset, we've witnessed how it can learn intricate patterns from data and make accurate predictions. The visualization of the confusion matrix offers insights into the model's strengths and weaknesses.
 
 
-#Further_Reading
+## Further_Reading
 
 If you're eager to dive deeper into the topics covered in this tutorial, here are some resources to explore:
 
