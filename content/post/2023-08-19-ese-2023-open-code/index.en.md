@@ -22,9 +22,9 @@ This is the open code repo for ESE 2023.
 ## Table of Contents
 
 1. [K-Means Clustering Tutorial](#k-means)
-2. [CART Regression with Public Dataset](#CART_regression)
-3. [Unveiling the Power of Neural Networks](#Neural_Network)
-4. [Conclusion](#Further_Reading)
+2. [CART Regression with Public Dataset](#CART-regression)
+3. [Unveiling the Power of Neural Networks](#Neural-Network)
+4. [Conclusion](#Further-Reading)
 
 
 ## K Means
@@ -105,7 +105,7 @@ Repeat the visualization for other pairs of features.
 That's it! You've successfully performed k-means clustering using Python and determined the optimal number of clusters using a scree plot. Feel free to explore this technique with other datasets and experiment with different values of k.
 
 
-## CART_regression
+## CART regression
 
 ### CART Regression with Diabetes Dataset
 
@@ -179,7 +179,7 @@ In this section, we covered the basics of CART regression, from loading the data
 
 Next, we'll continue our journey into machine learning with more advanced techniques.
 
-## Neural_Network
+## Neural Network
 ### Neural Networks: Unveiling the Power of Deep Learning
 
 In the realm of machine learning, Neural Networks (NNs) have risen to prominence due to their exceptional capabilities in capturing complex patterns in data. A Neural Network is inspired by the human brain's structure and consists of interconnected neurons organized in layers.
@@ -256,7 +256,7 @@ plt.show()
 In this section, we've delved into the world of Neural Networks, exploring their architecture and capabilities. By applying a simple Neural Network to the Iris dataset, we've witnessed how it can learn intricate patterns from data and make accurate predictions. The visualization of the confusion matrix offers insights into the model's strengths and weaknesses.
 
 
-## Further_Reading
+## Further Reading
 
 If you're eager to dive deeper into the topics covered in this tutorial, here are some resources to explore:
 
