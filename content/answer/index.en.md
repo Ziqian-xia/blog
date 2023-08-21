@@ -1,5 +1,5 @@
 ---
-title: K-MEANS ANSWER
+title: K-MEANS习题答案
 author: Ziqian Xia
 date: '2023-08-21'
 slug: kmeans
@@ -17,6 +17,7 @@ image:
 projects: []
 ---
 
+
 ## 源数据生成
 
 ```python
@@ -25,61 +26,79 @@ import pandas as pd
 
 # 生成模拟数据
 np.random.seed(42)
-num_users = 200
+num_users = 300
 num_features = 4
-data = np.random.rand(num_users, num_features) * np.array([10, 100, 5, 20]) + np.array([1, 10, 0.1, 5])
+
+# 为每个簇指定均值和标准差
+cluster_params = [
+    {'mean': [3, 50, 2, 10], 'std': [1, 10, 0.5, 5]},   # Cluster 0
+    {'mean': [7, 70, 4, 30], 'std': [1, 8, 0.8, 6]},    # Cluster 1
+    {'mean': [5, 60, 3, 20], 'std': [0.8, 7, 0.7, 5]}   # Cluster 2
+]
+
+cluster_labels = np.random.choice([0, 1, 2], size=num_users)
+data = np.zeros((num_users, num_features))
+
+for i, label in enumerate(cluster_labels):
+    cluster_mean = cluster_params[label]['mean']
+    cluster_std = cluster_params[label]['std']
+    data[i] = np.random.normal(cluster_mean, cluster_std)
 
 # 创建DataFrame
-df = pd.DataFrame(data, columns=['网页数', '停留时间', '购物车商品数', '点击广告数'])
+df = pd.DataFrame(data, columns=['webs', 'time', 'cart', 'click'])
 
-# 将数据保存为CSV文件
 df.to_csv('user_behavior_data.csv', index=False)
 ```
 
 ## 答案
 
 ```python
+
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.preprocessing import StandardScaler
-from sklearn.metrics import silhouette_score
 
-# 加载模拟的用户行为数据集
+# Load the user behavior data
 df = pd.read_csv('user_behavior_data.csv')
 
-# 数据标准化
+# Standardize the features
 scaler = StandardScaler()
-data_scaled = scaler.fit_transform(df)
+X_scaled = scaler.fit_transform(df)
 
-# 使用不同的聚类数目进行 K-Means
-num_clusters_range = range(2, 10)
-inertia_values = []
+# Scree Plot for Optimal Number of Clusters
+sse = []
+for k in range(1, 11):
+    kmeans = KMeans(n_clusters=k, random_state=0)
+    kmeans.fit(X_scaled)
+    sse.append(kmeans.inertia_)
 
-for num_clusters in num_clusters_range:
-    kmeans = KMeans(n_clusters=num_clusters, random_state=0)
-    kmeans.fit(data_scaled)
-    inertia_values.append(kmeans.inertia_)
-
-# 绘制 Scree Plot
-plt.plot(num_clusters_range, inertia_values, marker='o')
-plt.xlabel('Number of Clusters')
-plt.ylabel('Inertia')
-plt.title('Scree Plot for K-Means')
+plt.figure(figsize=(8, 6))
+plt.plot(range(1, 11), sse, marker='o')
+plt.xlabel('Number of Clusters (k)')
+plt.ylabel('Sum of Squared Distances')
+plt.title('Scree Plot')
 plt.show()
 
-# 选择最佳聚类数目
-best_num_clusters = np.argmin(np.diff(inertia_values)) + 2
-print(f"Best number of clusters: {best_num_clusters}")
+# From the scree plot, identify the “elbow” point where the decrease in the sum of squared distances starts to slow down.
+# This point suggests the optimal number of clusters.
 
-# 使用最佳聚类数目进行 K-Means
-best_kmeans = KMeans(n_clusters=best_num_clusters, random_state=0)
-df['cluster'] = best_kmeans.fit_predict(data_scaled)
+# Perform K-Means Clustering
+optimal_k = 3
+kmeans = KMeans(n_clusters=optimal_k, random_state=0)
+clusters = kmeans.fit_predict(X_scaled)
 
-# 输出每个群体的统计信息
-cluster_stats = df.groupby('cluster').mean()
-print(cluster_stats)
+df_with_clusters = df.copy()
+df_with_clusters['Cluster'] = clusters
+
+# Visualize the Clusters
+plt.scatter(df_with_clusters['time'], df_with_clusters['cart'],
+            c=df_with_clusters['Cluster'], cmap='viridis')
+plt.xlabel('Time')
+plt.ylabel('Cart Items')
+plt.title('User Behavior Clusters')
+plt.show()
 
 ```
 解释：
