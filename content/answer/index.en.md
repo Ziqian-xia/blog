@@ -100,6 +100,23 @@ plt.ylabel('Cart Items')
 plt.title('User Behavior Clusters')
 plt.show()
 
+
+#BONUS
+
+from sklearn.cluster import KMeans
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+
+data = pd.read_csv('user_behavior_data.csv')
+
+kmeans = KMeans(n_clusters=4, random_state=0)
+data['Cluster'] = kmeans.fit_predict(data)
+
+# 使用pairplot显示四维数据
+sns.pairplot(data, hue='Cluster', diag_kind='hist')
+plt.show()
+
 ```
 解释：
 
