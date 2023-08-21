@@ -20,12 +20,46 @@ projects: []
 This is the open code repo for ESE 2023.
 
 ## Table of Contents
-
+0. [Pre-requisite](#pre-requisite)
 1. [K-Means Clustering Tutorial](#k-means)
 2. [CART Regression with Public Dataset](#cart-regression)
 3. [Unveiling the Power of Neural Networks](#neural-network)
 4. [Conclusion](#further-reading)
 5. [Appendix and other codes](#appendix)
+    - [Linear Regression](#linear-regression)
+    - [Random forest (regression mode)](#random-forest-regression)
+    - [Random forest (classification mode)](#random-forest-classification)
+
+
+## Pre-requisite
+
+1. **Basic Programming Knowledge:** Familiarity with programming concepts is essential. Understanding variables, data types, loops, and conditional statements will help you grasp the fundamentals of Python more easily.
+
+2. **Mathematics Fundamentals:** Machine learning involves various mathematical concepts, including linear algebra, calculus, and statistics. While you don't need to be a math expert, having a solid foundation in these areas will greatly enhance your understanding of ML algorithms.
+
+3. **Python Programming Language:** Python is the go-to language for machine learning due to its simplicity and a wide range of libraries. Before diving into ML, make sure you have a good grasp of Python syntax, data structures, and basic libraries like NumPy and Pandas.
+
+4. **Data Handling Skills:** Dealing with data is at the heart of machine learning. Learn how to clean, preprocess, and manipulate data using libraries like Pandas. This skill is crucial for preparing your data for model training.
+
+5. **Linear Algebra:** Concepts like vectors, matrices, and matrix operations are fundamental to machine learning algorithms. Brush up on these topics to understand how data is represented and manipulated in ML.
+
+6. **Statistics and Probability:** ML algorithms often rely on statistical principles and probability theory. Understanding concepts like mean, median, variance, and probability distributions will help you interpret and evaluate your models effectively.
+
+7. **Machine Learning Basics:** Familiarize yourself with the basic concepts of machine learning, including supervised and unsupervised learning, classification, regression, clustering, and overfitting. This knowledge forms the groundwork for more advanced topics.
+
+**Useful Resources:**
+
+1. [Coursera - Machine Learning by Andrew Ng](https://www.coursera.org/learn/machine-learning): A highly recommended course that covers the fundamentals of ML. The course provides video lectures, assignments, and hands-on practice using Python.
+
+2. [Bilibili (哔哩哔哩)](https://www.bilibili.com/video/BV1zf4y1Z7zF/?spm_id_from=333.337.search-card.all.click)
+
+3. [Python.org](https://www.python.org/): The official Python website offers extensive documentation and tutorials for beginners. These resources will help you get comfortable with Python's syntax and features.
+
+4. [DataCamp](https://www.datacamp.com/): DataCamp offers interactive courses on Python, data manipulation, and machine learning. Their courses provide practical exercises to reinforce your skills.
+
+5. **Books:** ***"Python Machine Learning"*** by Sebastian Raschka and Vahid Mirjalili, and ***"Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow"*** by Aurélien Géron are highly recommended books to deepen your ML understanding.
+
+
 
 ## K Means
 
