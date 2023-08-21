@@ -27,6 +27,9 @@ This is the open code repo for ESE 2023.
 4. [Conclusion](#further-reading)
 5. [Appendix and other codes](#appendix)
     - [Linear Regression](#linear-regression)
+    - [Hierarchy clustering](#hierarchy-clustering-seed-data)
+    - [Decision tree (classification mode)](#decision-tree-classification)
+    - [Decision tree (regression mode)](#decision-tree-regression)
     - [Random forest (regression mode)](#random-forest-regression)
     - [Random forest (classification mode)](#random-forest-classification)
 
@@ -494,6 +497,212 @@ y_pred_new = model.predict(X_new)
 print("Predicted Carbon values:", y_pred_new)
 
 ```
+### Hierarchy Clustering (seed data)
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.preprocessing import StandardScaler
+from scipy.cluster.hierarchy import dendrogram, linkage
+from scipy.spatial.distance import pdist
+
+# 读取CSV文件
+data = pd.read_csv(r'C:\Users\29153\Downloads\seed.csv')
+
+# 提取特征列
+X = data.iloc[:, :-1].values
+
+
+# 数据标准化
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(X)
+
+# 计算距离矩阵
+# 使用平均链接法（average linkage）进行层次聚类
+# 使用欧氏距离作为距离度量
+distance_matrix = pdist(scaled_data, metric='euclidean')
+# 进行层次聚类
+linkage_matrix = linkage(distance_matrix, method='average')
+
+# 绘制树状图
+plt.figure(figsize=(10, 5))
+dendrogram(linkage_matrix)
+plt.xlabel('Samples')
+plt.ylabel('Distance')
+plt.title('Dendrogram of Agglomerative Hierarchical Clustering')
+plt.show()
+# 在层次聚类中，开始时，每个数据点都被视为一个单独的簇。随着聚类的进行，相似的簇逐渐合并成更大的簇。树状图从底部开始，每个叶节点代表一个初始数据点或簇，然后逐渐向上合并，直到达到一个根节点，表示整个数据集。在合并过程中，树状图的高度表示样本间的距离或相似性。
+# 簇的结构: 树状图可以显示数据点如何逐渐合并成簇。簇越靠近树状图的根部，表示越大的簇，而叶节点表示单个数据点或较小的簇。
+# 样本相似性: 树状图的高度代表了样本间的距离或相似性。簇内的样本越相似，它们在树状图上就会更早合并，并形成较短的分支。分支越长，表示样本之间的距离较大。
+# 聚类的数量: 通过观察树状图的分支和高度，可以帮助我们判断最佳的聚类数。当分支开始快速延长或形成明显的“肘部”时，可能是数据的一个自然分割点。
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import linkage, dendrogram
+from sklearn.preprocessing import StandardScaler
+
+# 读取CSV文件
+data = pd.read_csv(r'C:\Users\29153\Downloads\seed.csv')
+
+# 提取特征列
+X = data.iloc[:, :-1].values
+
+# 数据标准化
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(X)
+
+# 计算层次聚类
+# 使用最近邻（单链接）法来计算簇之间的距离
+linkage_matrix = linkage(scaled_data, method='single', metric='euclidean')
+
+# 绘制树状图
+dendrogram(linkage_matrix)
+plt.title('Dendrogram for Hierarchical Clustering')
+plt.xlabel('Samples')
+plt.ylabel('Distance')
+plt.show()
+
+
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+from scipy.cluster.hierarchy import dendrogram, linkage
+from sklearn.preprocessing import StandardScaler
+
+# 读取CSV文件
+data = pd.read_csv(r'C:\Users\29153\Downloads\seed.csv')
+
+# 提取特征列
+X = data.iloc[:, :-1].values
+
+# 数据标准化
+scaler = StandardScaler()
+scaled_data = scaler.fit_transform(X)
+
+# 计算层次聚类
+# 使用"complete linkage"方法（完全连接法）来计算簇之间的距离
+Z = linkage(scaled_data, method='complete', metric='euclidean')
+
+# 绘制层次聚类的树状图
+plt.figure(figsize=(10, 7))
+dendrogram(Z)
+plt.title('Hierarchical Clustering Dendrogram')
+plt.xlabel('Data Index')
+plt.ylabel('Distance')
+plt.show()
+```
+
+### Decision tree (Classification)
+```python
+from sklearn.datasets import load_iris
+from sklearn.tree import DecisionTreeClassifier, plot_tree
+import matplotlib.pyplot as plt
+from sklearn.metrics import confusion_matrix, classification_report
+import pandas as pd
+
+# 加载Iris数据集
+iris = load_iris()
+data = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+data['target'] = iris.target_names[iris.target]
+X = iris.data
+y = iris.target
+
+# 查看摘要统计信息
+summary = data.describe()
+
+print(summary)
+
+# 创建决策树分类器
+clf = DecisionTreeClassifier()
+
+# 训练模型
+clf.fit(X, y)
+
+# 绘制决策树的树状图
+plt.figure(figsize=(12, 8))
+plot_tree(clf, filled=True, feature_names=iris.feature_names, class_names=iris.target_names.tolist())
+plt.show()
+
+# 对数据集进行预测
+X_pred = iris.data
+y_true = iris.target
+
+# 进行预测
+y_pred = clf.predict(X_pred)
+
+# 导入pandas库，将预测结果转换为DataFrame
+y_pred_df = pd.DataFrame({'Predicted': y_pred, 'Actual': y_true})
+
+# 计算混淆矩阵
+confusion = confusion_matrix(y_true, y_pred)
+
+# 打印混淆矩阵
+print("Confusion Matrix:\n", confusion)
+
+# 生成分类报告
+class_report = classification_report(y_true, y_pred, target_names=iris.target_names)
+
+# 打印分类报告
+print("Classification Report:\n", class_report)
+```
+
+### Decision tree (regression)
+```python
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.tree import DecisionTreeRegressor, plot_tree
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import r2_score
+
+# Load the airquality dataset
+airquality = pd.read_csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/airquality.csv', index_col=0)
+
+# Check summary statistics
+summary = airquality.describe()
+print(summary)
+
+# Remove rows with NaN values
+airquality = airquality.dropna()
+
+# Separate features and target
+X = airquality.drop(columns='Ozone')
+y = airquality['Ozone']
+
+# Split the dataset into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Create a DecisionTreeRegressor
+regressor = DecisionTreeRegressor()
+
+# Create a DecisionTreeRegressor with max_depth=4
+regressor = DecisionTreeRegressor(max_depth=3)
+
+# Train the model
+regressor.fit(X_train, y_train)
+
+# Display the decision tree plot
+plt.figure(figsize=(12, 8))
+plt.title("Decision Tree Regressor")
+plot_tree(regressor, filled=True, feature_names=X.columns.tolist())
+plt.show()
+
+# Predict on the test set
+y_pred = regressor.predict(X_test)
+
+# Compare actual vs. predicted values
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.7)
+plt.plot([y_test.min(), y_test.max()], [y_test.min(), y_test.max()], linestyle='--', color='gray')  # Diagonal line
+plt.xlabel('Actual Ozone')
+plt.ylabel('Predicted Ozone')
+plt.title('Actual vs Predicted Ozone')
+plt.show()
+
+# Calculate and display R-squared
+r2 = r2_score(y_test, y_pred)
+print("R-squared:", r2)
+
+```
+
 
 ### Random forest (regression)
 
