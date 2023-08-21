@@ -77,6 +77,7 @@ import matplotlib.pyplot as plt
 from sklearn.cluster import KMeans
 from sklearn.datasets import load_iris
 from sklearn.preprocessing import StandardScaler
+from sklearn.model_selection import train_test_split
 ```
 
 ### Load and Prepare Data
@@ -159,6 +160,15 @@ In this section, we'll apply CART regression to the Diabetes dataset, which cont
 Let's start by loading the Diabetes dataset and preparing it for modeling:
 
 ```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.tree import DecisionTreeRegressor
+from sklearn.metrics import mean_squared_error
+from sklearn.tree import plot_tree
+
 # Load the Diabetes dataset
 data = load_diabetes()
 X = data.data
@@ -257,11 +267,26 @@ X_test_scaled = scaler.transform(X_test)
 Now, let's create a simple Neural Network using the `MLPClassifier` from scikit-learn:
 
 ```python
-# Initialize the Neural Network Classifier
-classifier = MLPClassifier(hidden_layer_sizes=(8,), max_iter=1000, random_state=0)
 
-# Train the model
-classifier.fit(X_train_scaled, y_train)
+# Initialize the Neural Network Classifier
+classifier = MLPClassifier(max_iter=10000, random_state=0)
+
+# Hyperparameter grid for grid search
+param_grid = {
+    'hidden_layer_sizes': [(8,), (16,), (32,)],
+    'alpha': [0.0001, 0.001, 0.01],
+    'learning_rate_init': [0.001, 0.01, 0.1]
+}
+
+# Perform Grid Search with 5-fold cross-validation
+grid_search = GridSearchCV(classifier, param_grid, cv=5)
+grid_search.fit(X_train_scaled, y_train)
+
+# Get the best model
+best_classifier = grid_search.best_estimator_
+
+# Predict on the test set
+y_pred = best_classifier.predict(X_test_scaled)
 ```
 
 ### Evaluating the Neural Network
@@ -285,6 +310,53 @@ sns.heatmap(conf_matrix, annot=True, cmap='Blues', fmt='d', xticklabels=data.tar
 plt.xlabel('Predicted')
 plt.ylabel('True')
 plt.title('Confusion Matrix')
+plt.show()
+```
+
+### NN Regression
+
+```python
+import numpy as np
+import pandas as pd
+from sklearn.datasets import fetch_california_housing
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neural_network import MLPRegressor
+from sklearn.metrics import mean_squared_error
+import matplotlib.pyplot as plt
+
+# Load the California housing dataset
+data = fetch_california_housing()
+X = data.data
+y = data.target
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=0)
+
+# Standardize the features
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+# Initialize the Neural Network Regressor
+regressor = MLPRegressor(hidden_layer_sizes=(32, 16), max_iter=1000, random_state=0)
+
+# Train the model
+regressor.fit(X_train_scaled, y_train)
+
+# Predict on the test set
+y_pred = regressor.predict(X_test_scaled)
+
+# Calculate Mean Squared Error
+mse = mean_squared_error(y_test, y_pred)
+print(f"Mean Squared Error: {mse:.2f}")
+
+# Visualize predicted vs. actual prices
+plt.figure(figsize=(10, 6))
+plt.scatter(y_test, y_pred, alpha=0.5)
+plt.xlabel('Actual Prices')
+plt.ylabel('Predicted Prices')
+plt.title('Predicted vs. Actual Prices')
 plt.show()
 ```
 
