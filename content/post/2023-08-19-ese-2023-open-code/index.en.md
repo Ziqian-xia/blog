@@ -25,7 +25,7 @@ This is the open code repo for ESE 2023.
 2. [CART Regression with Public Dataset](#cart-regression)
 3. [Unveiling the Power of Neural Networks](#neural-network)
 4. [Conclusion](#further-reading)
-
+5. [Appendix and other codes](#appendix)
 
 ## K Means
 
@@ -286,3 +286,377 @@ In this tutorial, we embarked on a journey through fundamental machine learning 
 
 
 Happy learning!
+
+## Appendix
+
+### Linear regression
+
+```python
+import pandas as pd
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+from scipy.stats import boxcox
+from statsmodels.stats.outliers_influence import variance_inflation_factor
+
+
+# 读取CSV文件
+data = pd.read_csv(r'C:\Users\29153\Desktop\carbon.csv')
+print(data)
+
+# 提取高收入国家(HI)的2016年以前的数据
+hi_data = data[(data['Income'] == 'HI') & (data['Time'] <= 2016)]
+# 剔除含有NaN项的数据
+hi_data = hi_data.dropna(subset=['Carbon', 'Pop', 'GDP_per_pop', 'Carbon_per_GDP'])
+
+print(hi_data)
+
+# 提取预测变量和响应变量
+hi_data['GDP_per_pop_squared'] = hi_data['GDP_per_pop'] ** 2
+X = hi_data[['Pop', 'Carbon_per_GDP', 'GDP_per_pop_squared']]
+y = hi_data['Carbon']
+
+# 添加截距列
+X = sm.add_constant(X)
+
+# 进行多元线性回归拟合
+model = sm.OLS(y, X).fit()
+
+# 打印拟合结果摘要
+print(model.summary())
+
+
+# 模型诊断
+# 获取模型预测值和残差
+# 模型预测值为model.predict(X)
+# 模型残差值为model.resid
+fitted_values = model.predict()
+residuals = model.resid
+
+# 同方差性/线性性（Homoscedasticity / linearity）检验
+# 残差e的方差会随着x变动而变动,因此方差是异质性的. 这被称为异方差问题，异方差存在的时候,大多数情况下,OLS估计出的方差会比实际的方差要小，因此会过高地估计系数b的显著性
+
+plt.scatter(fitted_values, residuals)
+# 拟合拟合值和残差的趋势线
+lowess = sm.nonparametric.lowess(residuals, fitted_values)
+plt.plot(lowess[:, 0], lowess[:, 1], color='red', linewidth=2)  # 添加红色趋势线
+
+plt.xlabel('Fitted values')
+plt.ylabel('Residuals')
+plt.title('Homoscedasticity / Linearity Check')
+plt.axhline(y=0, color='green', linestyle='--')
+plt.show()
+
+
+# 正态分布随机误差（Normally distributed random errors）检验
+sm.qqplot(residuals, line='s')
+plt.title('Normality of Residuals')
+plt.show()
+
+
+# 使用boxcox函数进行转化
+y_transformed, lmbda_best = boxcox(y, lmbda=None, alpha=None)
+print('lambda best ==', lmbda_best)
+
+model_2 = sm.OLS(y_transformed, X).fit()
+print(model_2.summary())
+
+
+fitted_values_2 = model_2.predict()
+residuals_2 = model_2.resid
+plt.scatter(fitted_values_2, residuals_2)
+# 拟合拟合值和残差的趋势线
+lowess = sm.nonparametric.lowess(residuals_2, fitted_values_2)
+plt.plot(lowess[:, 0], lowess[:, 1], color='red', linewidth=2)  # 添加红色趋势线
+plt.xlabel('Fitted values')
+plt.ylabel('Residuals')
+plt.title('Homoscedasticity / Linearity Check')
+plt.axhline(y=0, color='green', linestyle='--')
+plt.show()
+
+# 正态分布随机误差（Normally distributed random errors）检验
+sm.qqplot(residuals_2, line='s')
+plt.title('Normality of Residuals')
+plt.show()
+
+
+# 共线性（collinearity）检验
+# 使用VIF进行检验的方法主要为，对某一因子和其余因子进行回归，得到R^2，计算VIF，剔除因子中VIF高的因子，保留VIF较低的因子，以此类推，直到得到一个相关性较低的因子组合来增强模型的解释能力。
+# 在实际测试过程中，并非要指定一个VIF阈值，比如某因子的VIF值超过阈值才剔除，而是通过观察所有因子值的VIF值，如果发现该值较大（显著离群），剔除该因子即可。
+vif_data = pd.DataFrame()
+vif_data["feature"] = X.columns
+vif_data["VIF"] = [variance_inflation_factor(X.values, i) for i in range(X.shape[1])]
+print("VIF:")
+print(vif_data)
+
+# 自相关性（autocorrelation）检验
+sm.graphics.tsa.plot_acf(residuals, lags=20)
+plt.title('Autocorrelation of Residuals')
+plt.show()
+
+import pandas as pd
+import statsmodels.api as sm
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# 读取CSV文件
+data = pd.read_csv(r'C:\Users\29153\Desktop\carbon.csv')
+print(data)
+
+# 提取高收入国家(HI)的2016年以前的数据
+hi_data = data[(data['Income'] == 'HI') & (data['Time'] <= 2016)]
+# 剔除含有NaN项的数据
+hi_data = hi_data.dropna(subset=['Carbon', 'Pop'])
+
+print(hi_data)
+
+
+# 提取预测变量和响应变量
+X = hi_data['Pop']
+y = hi_data['Carbon']
+
+# 添加截距列
+X = sm.add_constant(X)
+
+# 进行多元线性回归拟合
+model = sm.OLS(y, X).fit()
+
+# 打印拟合结果摘要
+print(model.summary())
+
+# 计算95%置信区间
+conf_int = model.conf_int(alpha=0.05)
+print("95% 置信区间:")
+print(conf_int)
+
+# 绘制散点图和回归线
+plt.figure(figsize=(8, 6))
+sns.scatterplot(data=hi_data, x='Pop', y='Carbon', label='Pop')
+plt.plot(hi_data['Pop'], model.predict(X), color='red', label='Regression line (Pop)')
+plt.xlabel('Pop')
+plt.ylabel('Carbon')
+plt.title('Scatter Plot and Regression Line')
+plt.legend()
+plt.show()
+
+# 提取高收入国家(HI)的2014年的数据
+hi_data_2014 = data[(data['Income'] == 'HI') & (data['Time'] ==2014)]
+# 剔除含有NaN项的数据
+hi_data_2014 = hi_data_2014.dropna(subset=['Carbon', 'Pop'])
+
+print(hi_data_2014)
+
+
+# 提取预测变量和响应变量
+X_new = hi_data_2014[['Pop']]
+y_new = hi_data_2014['Carbon']
+
+# 添加截距列
+X_new = sm.add_constant(X_new)
+
+# 使用已拟合的模型进行预测
+y_pred_new = model.predict(X_new)
+
+# 打印预测结果
+print("Predicted Carbon values:", y_pred_new)
+
+```
+
+### Random forest (regression)
+
+```python
+import pandas as pd
+from sklearn.metrics import r2_score
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.model_selection import train_test_split, GridSearchCV
+
+# Load the airquality dataset
+airquality = pd.read_csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/airquality.csv', index_col=0)
+
+# Check summary statistics
+summary = airquality.describe()
+print(summary)
+
+# Remove rows with NaN values
+airquality = airquality.dropna()
+
+# 数据拆分
+X = airquality.drop(columns=['Ozone'])
+y = airquality['Ozone']
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=1)
+
+# 定义超参数网格
+param_grid = {
+    'n_estimators': [100, 500, 800],
+    'max_features': [1, 2, 3, 4],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4]
+}
+
+# 创建随机森林回归器
+rf_regressor = RandomForestRegressor(random_state=1)
+
+# 使用网格搜索寻找最佳超参数
+grid_search = GridSearchCV(estimator=rf_regressor, param_grid=param_grid, scoring='r2', cv=5)
+grid_search.fit(X_train, y_train)
+
+# 打印最佳参数
+best_params = grid_search.best_params_
+print("Best Parameters:", best_params)
+
+# 使用最佳参数的随机森林回归器进行预测
+best_rf_regressor=RandomForestRegressor(n_estimators=best_params['n_estimators'],
+                                 max_features=best_params['max_features'],
+                                 min_samples_leaf=best_params['min_samples_leaf'],
+                                 random_state=1)
+
+# 训练模型
+best_rf_regressor.fit(X_train, y_train)
+
+# 进行预测
+predictions=best_rf_regressor.predict(X_test)
+
+# 计算R2分数
+r2 = r2_score(y_test, predictions)
+print("Best R-squared:", r2)
+
+
+import pandas as pd
+import numpy as np
+from sklearn.ensemble import RandomForestRegressor
+from sklearn.metrics import r2_score
+import matplotlib.pyplot as plt
+
+# Load the airquality dataset
+airquality = pd.read_csv('https://raw.githubusercontent.com/vincentarelbundock/Rdatasets/master/csv/datasets/airquality.csv', index_col=0)
+
+# Check summary statistics
+summary = airquality.describe()
+print(summary)
+
+# Remove rows with NaN values
+airquality = airquality.dropna()
+
+# 数据拆分
+idx = np.random.choice(range(len(airquality)), size=int(len(airquality) * 0.7), replace=False)
+train = airquality.iloc[idx]
+test = airquality.iloc[np.delete(range(len(airquality)), idx)]
+
+# 创建随机森林回归器
+rf_regressor = RandomForestRegressor(n_estimators=500, max_features=2, random_state=1)
+
+# 训练随机森林模型
+rf_regressor.fit(train.drop(columns=['Ozone']), train['Ozone'])
+
+# 预测测试集
+predictions = rf_regressor.predict(test.drop(columns=['Ozone']))
+
+# 计算R2分数
+r2 = r2_score(test['Ozone'], predictions)
+print("R-squared:", r2)
+
+# 绘制预测值和真实值的散点图
+plt.figure(figsize=(10, 6))
+plt.scatter(test['Ozone'], predictions, alpha=0.7)
+plt.plot([test['Ozone'].min(), test['Ozone'].max()], [test['Ozone'].min(), test['Ozone'].max()], linestyle='--', color='gray')  # Diagonal line
+plt.xlabel('Actual Ozone')
+plt.ylabel('Predicted Ozone')
+plt.title('Actual vs Predicted Ozone')
+plt.show()
+```
+
+### Random forest (classification)
+
+```python
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split, GridSearchCV
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import accuracy_score
+
+iris = load_iris()
+X = iris.data
+y = iris.target
+
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+clf = RandomForestClassifier(random_state=42)
+
+param_grid = {
+    'n_estimators': [50, 100, 200],
+    'max_depth': [None, 10, 20],
+    'min_samples_split': [2, 5, 10],
+    'min_samples_leaf': [1, 2, 4]
+}
+
+grid_search = GridSearchCV(estimator=clf, param_grid=param_grid, cv=3, scoring='accuracy')
+grid_search.fit(X_train, y_train)
+
+best_params = grid_search.best_params_
+print("Best Parameters:", best_params)
+
+best_clf = RandomForestClassifier(**best_params, random_state=42)
+
+best_clf.fit(X_train, y_train)
+y_pred = best_clf.predict(X_test)
+
+accuracy = accuracy_score(y_test, y_pred)
+print("Best Model Accuracy:", accuracy)
+
+import pandas as pd
+import numpy as np
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.metrics import classification_report
+from sklearn.metrics import accuracy_score
+
+
+# 设置随机数种子
+np.random.seed(1)
+
+# 加载鸢尾花数据集
+iris = load_iris()
+data = pd.DataFrame(data=iris.data, columns=iris.feature_names)
+data['target'] = iris.target_names[iris.target]
+X = iris.data
+y = iris.target
+
+# 查看摘要统计信息
+summary = data.describe()
+
+print(summary)
+
+# 数据拆分
+idx = np.random.choice(range(len(iris.target)), size=int(len(iris.target) * 0.7), replace=False)
+train = X[idx]
+train_labels = y[idx]
+test = np.delete(X, idx, axis=0)
+test_labels = np.delete(y, idx, axis=0)
+
+# 创建随机森林分类器
+rf_classifier = RandomForestClassifier(n_estimators=1000, max_features=3, random_state=1)
+
+# 训练随机森林模型
+rf_classifier.fit(train, train_labels)
+
+# 预测测试集
+predictions = rf_classifier.predict(test)
+
+# 计算混淆矩阵
+confusion = confusion_matrix(test_labels, predictions)
+
+# 打印混淆矩阵
+print("Confusion Matrix:\n", confusion)
+
+# 计算分类报告
+class_report = classification_report(test_labels, predictions, target_names=iris.target_names)
+
+# 打印分类报告
+print("Classification Report:\n", class_report)
+
+# 计算整体准确度
+overall_accuracy = accuracy_score(test_labels, predictions)
+
+# 打印整体准确度
+print("Overall Accuracy:", overall_accuracy)
+
+```
