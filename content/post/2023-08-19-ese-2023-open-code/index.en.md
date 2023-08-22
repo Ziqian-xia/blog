@@ -257,6 +257,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.neural_network import MLPClassifier
 from sklearn.metrics import accuracy_score, confusion_matrix
 import seaborn as sns
+from sklearn.model_selection import GridSearchCV
 
 # Load the Iris dataset
 data = load_iris()
