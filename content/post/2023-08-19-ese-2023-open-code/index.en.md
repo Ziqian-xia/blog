@@ -248,6 +248,16 @@ Now, let's apply a Neural Network to the Iris dataset, continuing from where we 
 ### Loading and Preprocessing Data
 
 ```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.neural_network import MLPClassifier
+from sklearn.metrics import accuracy_score, confusion_matrix
+import seaborn as sns
+
 # Load the Iris dataset
 data = load_iris()
 X = data.data
