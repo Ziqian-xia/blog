@@ -296,6 +296,9 @@ grid_search.fit(X_train_scaled, y_train)
 # Get the best model
 best_classifier = grid_search.best_estimator_
 
+# Train the best model on the entire training set
+best_classifier.fit(X_train_scaled, y_train)
+
 # Predict on the test set
 y_pred = best_classifier.predict(X_test_scaled)
 ```
@@ -348,8 +351,8 @@ x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_
 
 # Normalize data
 scaler = StandardScaler()
-x_train_scaled = scaler.fit_transform(x_train)
-x_test_scaled = scaler.transform(x_test)
+X_train_scaled = scaler.fit_transform(x_train)
+X_test_scaled = scaler.transform(x_test)
 
 # Define the model
 def create_model(learning_rate=0.01, dropout_rate=0.2, activation='relu'):
@@ -382,7 +385,7 @@ for lr in param_grid['learning_rate']:
         for act in param_grid['activation']:
             print(f'Trying: lr={lr}, dr={dr}, act={act}')
             model = create_model(learning_rate=lr, dropout_rate=dr, activation=act)
-            history = model.fit(x_train_scaled, y_train,
+            history = model.fit(X_train_scaled, y_train,
                                 epochs=50,  # Increase epochs for better convergence
                                 validation_split=0.2,
                                 verbose=0,
@@ -401,7 +404,7 @@ best_model = create_model(learning_rate=best_params['learning_rate'],
                           dropout_rate=best_params['dropout_rate'],
                           activation=best_params['activation'])
 
-history = best_model.fit(x_train_scaled, y_train,
+history = best_model.fit(X_train_scaled, y_train,
                          epochs=50,  # Increase epochs for better convergence
                          validation_split=0.2,
                          verbose=1,
@@ -415,7 +418,7 @@ plt.title('Training and Validation MAE')
 plt.show()
 
 # Evaluate on the test set
-test_loss, test_mae = best_model.evaluate(x_test_scaled, y_test)
+test_loss, test_mae = best_model.evaluate(X_test_scaled, y_test)
 print(f'\nTest MAE: {test_mae}')
 
 ```

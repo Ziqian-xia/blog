@@ -133,3 +133,102 @@ plt.show()
 使用最佳聚类数目进行 K-Means： 我们使用上一步中选择的最佳聚类数目，应用 K-Means 聚类算法。
 
 输出每个群体的统计信息： 我们输出每个群体的平均值，以便更好地了解不同群体的用户行为特点。
+
+
+## 神经网络 答案
+
+```python
+import numpy as np
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.datasets import load_diabetes
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+import tensorflow as tf
+from tensorflow import keras
+from tensorflow.keras.layers import Dense, Dropout
+from tensorflow.keras.optimizers import Adam
+from tensorflow.keras.callbacks import EarlyStopping
+
+# Load the diabetes dataset
+data = load_diabetes()
+X = data.data
+y = data.target
+
+# Split the data into training and testing sets
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Normalize data
+scaler = StandardScaler()
+X_train_scaled = scaler.fit_transform(X_train)
+X_test_scaled = scaler.transform(X_test)
+
+
+
+# Define the model
+def create_model(learning_rate=0.01, dropout_rate=0.2, activation='relu'):
+    model = keras.Sequential([
+        Dense(128, activation=activation, input_shape=(10,)),
+        Dropout(dropout_rate),
+        Dense(1)
+    ])
+    optimizer = Adam(learning_rate=learning_rate)
+    model.compile(optimizer=optimizer,
+                  loss='mean_squared_error',
+                  metrics=['mae'])
+    return model
+
+# Define early stopping
+early_stopping = EarlyStopping(patience=5, restore_best_weights=True)
+
+# Define hyperparameter space
+param_grid = {
+    'learning_rate': [0.001, 0.01],
+    'dropout_rate': [0.2, 0.4],
+    'activation': ['relu', 'sigmoid']
+}
+
+# Perform grid search
+best_score = np.inf
+best_params = {}
+for lr in param_grid['learning_rate']:
+    for dr in param_grid['dropout_rate']:
+        for act in param_grid['activation']:
+            print(f'Trying: lr={lr}, dr={dr}, act={act}')
+            model = create_model(learning_rate=lr, dropout_rate=dr, activation=act)
+            history = model.fit(X_train_scaled, y_train,
+                                epochs=50,  # Increase epochs for better convergence
+                                validation_split=0.2,
+                                verbose=0,
+                                callbacks=[early_stopping])
+            val_mae = history.history['val_mae'][-1]
+            print(f'Val MAE: {val_mae}')
+            if val_mae < best_score:
+                best_score = val_mae
+                best_params = {'learning_rate': lr, 'dropout_rate': dr, 'activation': act}
+
+# Output best parameters and best score
+print(f'Best score: {best_score} using {best_params}')
+
+# Train the model with the best parameters
+best_model = create_model(learning_rate=best_params['learning_rate'],
+                          dropout_rate=best_params['dropout_rate'],
+                          activation=best_params['activation'])
+
+history = best_model.fit(X_train_scaled, y_train,
+                         epochs=50,  # Increase epochs for better convergence
+                         validation_split=0.2,
+                         verbose=1,
+                         callbacks=[early_stopping])
+
+# Visualize training and validation MAE
+plt.plot(history.history['mae'], label='Training MAE')
+plt.plot(history.history['val_mae'], label='Validation MAE')
+plt.legend()
+plt.title('Training and Validation MAE')
+plt.show()
+
+# Evaluate on the test set
+test_loss, test_mae = best_model.evaluate(X_test_scaled, y_test)
+print(f'\nTest MAE: {test_mae}')
+```
