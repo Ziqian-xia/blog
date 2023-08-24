@@ -152,16 +152,16 @@ from tensorflow.keras.callbacks import EarlyStopping
 
 # Load the diabetes dataset
 data = load_diabetes()
-X = data.data
+x = data.data
 y = data.target
 
 # Split the data into training and testing sets
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+x_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=42)
 
 # Normalize data
 scaler = StandardScaler()
-X_train_scaled = scaler.fit_transform(X_train)
-X_test_scaled = scaler.transform(X_test)
+x_train_scaled = scaler.fit_transform(x_train)
+x_test_scaled = scaler.transform(x_test)
 
 
 
@@ -196,7 +196,7 @@ for lr in param_grid['learning_rate']:
         for act in param_grid['activation']:
             print(f'Trying: lr={lr}, dr={dr}, act={act}')
             model = create_model(learning_rate=lr, dropout_rate=dr, activation=act)
-            history = model.fit(X_train_scaled, y_train,
+            history = model.fit(x_train_scaled, y_train,
                                 epochs=50,  # Increase epochs for better convergence
                                 validation_split=0.2,
                                 verbose=0,
@@ -215,7 +215,7 @@ best_model = create_model(learning_rate=best_params['learning_rate'],
                           dropout_rate=best_params['dropout_rate'],
                           activation=best_params['activation'])
 
-history = best_model.fit(X_train_scaled, y_train,
+history = best_model.fit(x_train_scaled, y_train,
                          epochs=50,  # Increase epochs for better convergence
                          validation_split=0.2,
                          verbose=1,
@@ -229,6 +229,6 @@ plt.title('Training and Validation MAE')
 plt.show()
 
 # Evaluate on the test set
-test_loss, test_mae = best_model.evaluate(X_test_scaled, y_test)
+test_loss, test_mae = best_model.evaluate(x_test_scaled, y_test)
 print(f'\nTest MAE: {test_mae}')
 ```
