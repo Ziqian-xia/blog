@@ -55,6 +55,8 @@ Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academ
 
 **I am actively looking for a Ph.D. position, please feel free to contact me.**
 
+**I am currently visiting the [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of Prof. Dr. Verena Tiefenbeck.**
+
 My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
 Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/). [*CEEDER*](https://environmentalevidence.org/ceeder/) Review College/Screening Team Member.
