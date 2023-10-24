@@ -24,7 +24,7 @@ role: Graduate Student
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  link: mailto:ziqian.research@gmail.com
 - display:
     header: true
   icon: twitter
@@ -49,7 +49,7 @@ Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.
 
 - I am interested in research on the human and policy dimensions of climate change. Currently I am trying to understand climate change mitigation / adaptation behavior using IoT-based and remote sensing techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
 
-- I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. 
+- I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. See [China Climate Communication Initiative](https://climcomm.netlify.app/) for detail.
 
 Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm).
 
@@ -59,7 +59,9 @@ Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academ
 
 My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
-Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/). [*CEEDER*](https://environmentalevidence.org/ceeder/) Review College/Screening Team Member.
+Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/).
+Co-founder, [China Climate Communication Initiative](https://climcomm.netlify.app/)
+[*CEEDER*](https://environmentalevidence.org/ceeder/) Review College/Screening Team Member.
 
 Ad Hoc Reviewer: 
 - *Global Environmental Change* 

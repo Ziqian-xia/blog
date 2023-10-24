@@ -22,13 +22,13 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
-  - title: Research Assistant
-    company: Nanchang University
-    company_url: 'http://english.ncu.edu.cn/'
-    company_logo: ncu
-    location: Nanchang, China
-    date_start: '2021-06-18'
-    date_end: ''
+  - title: Visiting Researcher
+    company: University of Erlangen-Nuremberg
+    company_url: 'https://www.fau.eu/'
+    company_logo: fau
+    location: Nuremberg, Germany
+    date_start: '2023-09-08'
+    date_end: '2023-11-23'
     description: Conducting circular economy related research as a primary investigator.
 
   - title: Research Intern
