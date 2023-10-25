@@ -24,6 +24,6 @@ main:
 #  - name: Family
 #    url: 'https://ziqian-xia.tech/family/'
 #    weight: 60
-  - name: Contact
-    url: '#contact'
+  - name: China Climate Communication Initiative
+    url: 'https://climcomm.netlify.app/'
     weight: 70
