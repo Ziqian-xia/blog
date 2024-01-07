@@ -51,11 +51,9 @@ Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.
 
 - I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. See [China Climate Communication Initiative](https://climcomm.netlify.app/) for detail.
 
-Prior to joining [Tongji University](https://en.tongji.edu.cn/), I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm).
+I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) and [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of Prof. Dr. Verena Tiefenbeck.
 
 **I am actively looking for a Ph.D. position, please feel free to contact me.**
-
-**I am currently visiting the [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of Prof. Dr. Verena Tiefenbeck.**
 
 My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
@@ -71,5 +69,6 @@ Ad Hoc Reviewer:
 - *Cleaner Environmental Systems*
 - *Frontiers in Earth Science*
 - *Current Research in Behavioral Sciences*
+- *Scientific Reports*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).

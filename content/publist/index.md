@@ -29,17 +29,19 @@ Zhang, S., **Xia, Z.**, Zhang, C., & Tian, X. (2023). Green Illusions in Self-Re
 
 Fan, J., Liu, G., **Xia, Z.** & Cai, S. (2022). A bibliometric analysis of climate change risk perception: Hot spots, trends and improvements. *Frontiers in Environmental Science*.
 
+Tian, X., Tan, H., Xie, J., **Xia, Z.**, & Liu, Y. (2023). Design and simulation of a cross-regional collaborative recycling system for secondary resources: A case of lead-acid batteries. Journal of Environmental Management, 348, 119181.
+
 Tian, X., **Xia, Z.**, Xie, J., Zhang, C., Liu, Y., & Xu, M. (2022). A meta-analytical review of intervention experiments to reduce food waste. *Environmental Research Letters* **(Co-first author)**.
 
-Xie, J., **Xia, Z.**, Tian, X., & Liu, Y. (2023). Nexus and synergy between the low-carbon economy and circular economy: A systematic and critical review. *Environmental Impact Assessment Review*, 100, 107077.
+Yang, X., Zhang, C., ..., **Xia, Z.**, ... & Chen, W. Q. (2024). Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. Ecological Economics, 217, 108092.
+
+Xie, J., , Tian, X., & Liu, Y. (2023). Nexus and synergy between the low-carbon economy and circular economy: A systematic and critical review. *Environmental Impact Assessment Review*, 100, 107077.
 
 **Xia, Z.**, & Liu, Y. (2021). Aiding pro-environmental behavior measurement by Internet of Things. *Current Research in Behavioral Sciences*, 2, 100055.
 
 Huang, L., **Xia, Z.**, & Cao, Y. (2022). A Bibliometric Analysis of Global Fine Roots Research in Forest Ecosystems during 1992–2020. *Forests*, 13(1), 93.
 
 **Xia, Z.**, ..., Zhang, C. et al. Government efforts in environmental improvement unintentionally crowd out individual pro-environmental intentions. (Submitted to ***Ecological Economics***)
-
-Yang, X., …, **Xia, Z.**, …, Zhang, C. et al. Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. (Submitted to ***Ecological Economics***)
 
 Fan, J.,**Xia, Z.**, …, Yang, X. et al. Export stability and air pollution: evidence from 56 major exporting countries. (Under revision at ***Applied Economics Letters***)
 
@@ -48,7 +50,5 @@ Tian, X., …, **Xia, Z.**, …, Xie, J. et al. Economic analysis of seven typic
 Xie, J., …, **Xia, Z.**, …, Tian, X. et al. A Spiral Infinite-life-cycle Assessment Model for Measuring the Environmental Performance of Circular Economy Systems. (Under review at ***Science of the Total Environment***)
 
 Tian, X., …, **Xia, Z.** et al. Environmental impact and economic assessment of recycling lithium iron phosphate batteries: Comparison of major processes in China. (Under revision at ***Resources, Conservation & Recycling***)
-
-Tian, X., …, **Xia, Z.** et al. Design and Simulation of a Cross-regional Collaborative Recycling System for Secondary Resources: A Case of Lead-acid Batteries. (Under revision at ***Journal of Environmental Management***)
 
 Xie, J., …, **Xia, Z.**, …, Xu, M. et al. Structure of Global Trade Network Embedding Water Scarcity Risks. (Submitting to ***International Journal of Logistics Research and Applications***)
