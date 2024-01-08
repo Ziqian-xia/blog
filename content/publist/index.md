@@ -35,7 +35,7 @@ Tian, X., **Xia, Z.**, Xie, J., Zhang, C., Liu, Y., & Xu, M. (2022). A meta-anal
 
 Yang, X., Zhang, C., ..., **Xia, Z.**, ... & Chen, W. Q. (2024). Multinational dynamic steel cycle analysis reveals sequential decoupling between material use and economic growth. ***Ecological Economics***, 217, 108092.
 
-Xie, J., , Tian, X., & Liu, Y. (2023). Nexus and synergy between the low-carbon economy and circular economy: A systematic and critical review. ***Environmental Impact Assessment Review***, 100, 107077.
+Xie, J., **Xia, Z.**, Tian, X., & Liu, Y. (2023). Nexus and synergy between the low-carbon economy and circular economy: A systematic and critical review. ***Environmental Impact Assessment Review***, 100, 107077.
 
 **Xia, Z.**, & Liu, Y. (2021). Aiding pro-environmental behavior measurement by Internet of Things. ***Current Research in Behavioral Sciences***, 2, 100055.
 

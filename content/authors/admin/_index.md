@@ -51,7 +51,7 @@ Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.
 
 - I am using MRP and MIRO to conduct large-scale surveys of Chinese individuals, estimating their climate change perceptions and individual carbon footprint. See [China Climate Communication Initiative](https://climcomm.netlify.app/) for detail.
 
-I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) and [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of Prof. Dr. Verena Tiefenbeck.
+I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) under the guidance of [Prof. Dr. Xi Tian](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) and [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of [Prof. Dr. Verena Tiefenbeck](https://www.wiso.rw.fau.de/forschung/forschungsprofil/professorenschaft/prof-dr-verena-tiefenbeck/).
 
 **I am actively looking for a Ph.D. position, please feel free to contact me.**
 
