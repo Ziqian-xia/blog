@@ -6,12 +6,12 @@
 main:
 
 
-#  - name: Publications
-#    url: 'https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao'
-#    weight: 30
+  - name: Publications
+    url: 'https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao'
+    weight: 30
   - name: Experiences
     url: '#experience'
-    weight: 20
+    weight: 35
   - name: Posts
     url: '#posts'
     weight: 40
