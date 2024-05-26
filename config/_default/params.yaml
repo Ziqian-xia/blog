@@ -23,7 +23,7 @@ twitter: 'https://twitter.com/Ziqian_Xia'
 email: Ziqian.research@gmail.com
 phone: -
 address:
-  street: NO.4800 Caoan Rd，Jiading District
+  street: NO.4800 Caoan Rd Jiading District
   city: Shanghai
   region: Shanghai
   postcode: '201804'
@@ -91,7 +91,7 @@ show_related:
   page: false
   post: true
   project: true
-  publication: false
+  publication: true
   event: true
 reading_time: true
 section_pager: false
