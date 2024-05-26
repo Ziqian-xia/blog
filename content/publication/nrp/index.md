@@ -8,7 +8,7 @@ authors:
 
 date: "2022-10-13T00:00:00Z"
 doi: "https://doi.org/10.1038/s44159-022-00125-0"
-featured: false
+featured: true
 image:
   caption: 'Digital environment'
   focal_point: ""
