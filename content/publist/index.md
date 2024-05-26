@@ -7,17 +7,15 @@ type: page
 view: 2
 ---
 
-View it on [ORCID](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024)
+## Published Papers
 
 View it on [Google Scholar](https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao)
 
-**Xia, Z.**, ..., Zhang, C. et al. Growing climate change perception but rising regional disparities in China. (Under review at ***Nature Communications***)
+## Outdated List
 
-D, Xu., T, Bai., ..., **Xia, Z.**, ..., Zhou, Y. et al. Urban greening effectively curbs warming in Chinese cities. (Under review at ***Nature Cites***)
+D, Xu., T, Bai., ..., **Xia, Z.**, ..., Zhou, Y. et al. Urban greening effectively curbs warming in Chinese cities. (Under review at ***PNAS Nexus***)
 
-**Xia, Z.** (2022). Digital interventions for a sustainable future. ***Nature Reviews Psychology***, 1-1.
-
-Yang, J., …, **Xia, Z.** & Bi, J. et al. Measuring climate change perception in China using mental images: A nationwide open-ended survey. (Submitting to ***One Earth***)
+Yang, J., …, **Xia, Z.** & Bi, J. et al. Measuring climate change perception in China using mental images: A nationwide open-ended survey. (Under Revision at ***Risk***)
 
 **Xia, Z.**, Ye, J., Zhou, Y., Howe, P. D., Xu, M., Tan, X., ... & Zhang, C. (2022). A Meta-analysis of the relationship between Climate Change Experience and Climate Change Perception. ***Environmental Research Communications***.
 

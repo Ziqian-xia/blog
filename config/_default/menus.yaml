@@ -7,7 +7,7 @@ main:
 
 
   - name: Publications
-    url: 'https://ziqian-xia.tech/publist/'
+    url: 'https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao'
     weight: 30
   - name: Experiences
     url: '#experience'
