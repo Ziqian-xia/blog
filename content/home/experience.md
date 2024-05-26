@@ -38,7 +38,7 @@ experience:
     location: Nuremberg, Germany
     date_start: '2023-09-08'
     date_end: '2023-11-23'
-    description: Conducting circular economy related research as a primary investigator.
+    #description: Conducting circular economy related research as a primary investigator.
 
   - title: Research Intern
     company: University of Winnipeg
@@ -47,8 +47,8 @@ experience:
     location: Winnipeg, Canada
     date_start: '2021-06-01'
     date_end: '2021-09-01'
-    description: |2-
-        Help team with reports and geo-visualization/analysis.
+    #description: |2-
+       # Help team with reports and geo-visualization/analysis.
         
   - title: Research Assistant
     company: The institute of soil and water conservation (ISWC),Chinese Academy of Sciences
@@ -57,8 +57,7 @@ experience:
     location: Xi’an, China
     date_start: '2019-09-01'
     date_end: '2020-09-01'
-    description: |2-
-        Conduct bibliographic analysis and meta-science research.
+    #description: Conduct bibliographic analysis and meta-science research.
         
 
 
