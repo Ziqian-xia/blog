@@ -22,6 +22,15 @@ date_format: Jan 2006
 #   Leave `date_end` empty if it's your current employer.
 #   Begin multi-line descriptions with YAML's `|2-` multi-line prefix.
 experience:
+  - title: Affiliated Researcher
+    company: Cambridge Collective Intelligence & Design Group
+    company_url: 'https://camcid.github.io/'
+    company_logo: Cambridge
+    location: Cambridge, UK
+    date_start: '2024-02-01'
+    date_end: ''
+   # description: Conducting Replication Studies
+
   - title: Visiting Researcher
     company: University of Erlangen-Nuremberg
     company_url: 'https://www.fau.eu/'
