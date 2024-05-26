@@ -6,6 +6,8 @@ widget: pages
 # This file represents a page section.
 headless: true
 
+active: false
+
 # Order that this section appears on the page.
 weight: 40
 
@@ -38,5 +40,5 @@ design:
 ---
 
 {{% callout note %}}
-Click [**here**](https://ziqian-xia.tech/publist/) to see **full publication list**
+Click [**here**](https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao) to see **full publication list**
 {{% /callout %}}
