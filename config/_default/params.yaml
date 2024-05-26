@@ -21,18 +21,18 @@ twitter: 'https://twitter.com/Ziqian_Xia'
 # Contact (edit or remove options as required)
 
 email: Ziqian.research@gmail.com
-phone: +86 17694989975
+phone: -
 address:
-  street: Xuefu Ave, Honggutan New District
-  city: Nanchang
-  region: Jiangxi Province
-  postcode: '330031'
+  street: NO.4800 Caoan Rd，Jiading District
+  city: Shanghai
+  region: Shanghai
+  postcode: '201804'
   country: China
   country_code: CN
 coordinates:
-  latitude: '28.662'
-  longitude: '115.80'
-directions: Zhihua Tech Building,1007
+  latitude: '31.30'
+  longitude: '121.22'
+directions: Tongxin Building, Room 344
 office_hours:
   - 'Weekday 10:00 to 21:00'
   - 'Weekend 11:00 to 21:00'
@@ -91,7 +91,7 @@ show_related:
   page: false
   post: true
   project: true
-  publication: true
+  publication: false
   event: true
 reading_time: true
 section_pager: false
