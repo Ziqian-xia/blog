@@ -61,6 +61,13 @@ Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affil
 Co-founder, [China Climate Communication Initiative](https://climcomm.netlify.app/). 
 [*CEEDER*](https://environmentalevidence.org/ceeder/) Review College Member.
 
+Python package development: 
+
+* 📦️[LLMeta: ](https://github.com/yebarryallen/LLMeta) Large language models for automated meta-analysis
+
+* 📦️[SECFC:](https://github.com/yebarryallen/SECFC) Survey Embedded Carbon Footprint Calculator
+
+
 Ad Hoc Reviewer: 
 - *Global Environmental Change* 
 - *Environmental Evidence*
