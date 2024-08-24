@@ -11,9 +11,6 @@ view: 2
 
 View it on [Google Scholar](https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao)
 
-<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FjWdMToYRNXHBNRgmZ&noBootstrap=1&jsonp=1"></script>
-
-
 ## Outdated List
 
 **Xia, Z.**, Ye, J., Marlon, J., Dong, X., Xie, J., Tian, X., ... & Liu, M. (2023). Growing climate change concern but rising regional disparities in China. (Under review at ***Nature Communications***)
@@ -57,3 +54,8 @@ Xie, J., …, **Xia, Z.**, …, Tian, X. et al. A Spiral Infinite-life-cycle Ass
 Tian, X., …, **Xia, Z.** et al. Environmental impact and economic assessment of recycling lithium iron phosphate batteries: Comparison of major processes in China. (Under revision at ***Resources, Conservation & Recycling***)
 
 Xie, J., …, **Xia, Z.**, …, Xu, M. et al. Structure of Global Trade Network Embedding Water Scarcity Risks. (Submitting to ***International Journal of Logistics Research and Applications***)
+
+
+## Sorted by date
+
+<script src="https://bibbase.org/show?bib=https%3A%2F%2Fbibbase.org%2Fnetwork%2Ffiles%2FjWdMToYRNXHBNRgmZ&noBootstrap=1&jsonp=1"></script>
