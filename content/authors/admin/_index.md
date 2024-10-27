@@ -64,7 +64,7 @@ Co-founder, [China Climate Communication Initiative](https://climcomm.netlify.ap
 Python package development: 
 
 * 📦️[LLMeta: ](https://github.com/yebarryallen/LLMeta) Large language models for automated meta-analysis
-
+* 📦️[LLMscreen: ](https://github.com/yebarryallen/LLMscreen) Large language models for automated paper screening.
 * 📦️[SECFC:](https://github.com/yebarryallen/SECFC) Survey Embedded Carbon Footprint Calculator
 
 
@@ -75,8 +75,10 @@ Ad Hoc Reviewer:
 - *Environment, Development and Sustainability*
 - *Resources, Conservation & Recycling Advances* 
 - *Cleaner Environmental Systems*
+- *Cleaner and Responsible Consumption*
 - *Frontiers in Earth Science*
 - *Current Research in Behavioral Sciences*
 - *Scientific Reports*
+- *Discover Sustainability*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
