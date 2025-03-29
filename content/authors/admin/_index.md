@@ -45,7 +45,7 @@ superuser: true
 title: Ziqian Xia (夏子谦)
 ---
 
-Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.tongji.edu.cn/) as well as a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html) and [Cambridge Collective Intelligence & Design Group](https://camcid.github.io/).
+Hi there, I am Ziqian Xia, a incoming PhD student at [Stanford University](https://stanford.edu/). I am also a primary researcher at [Chao Zhang's Group](https://sem.tongji.edu.cn/semen/12413.html) and [Cambridge Collective Intelligence & Design Group](https://camcid.github.io/).
 
 - I am interested in research on the human and policy dimensions of climate change. Currently I am trying to understand climate change mitigation / adaptation behavior using IoT-based and remote sensing techniques. See [my full publication list](https://ziqian-xia.tech/publist/) for detail.
 
@@ -53,13 +53,17 @@ Hi there, I am Ziqian Xia, a graduate student at [Tongji University](https://en.
 
 I had my academic training at [Xi Tian's Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) under the guidance of [Prof. Dr. Xi Tian](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm) and [Bits to Energy lab](https://www.digitaltransformation.rw.fau.eu/) at FAU Germany, under the guidance of [Prof. Dr. Verena Tiefenbeck](https://www.wiso.rw.fau.de/forschung/forschungsprofil/professorenschaft/prof-dr-verena-tiefenbeck/).
 
-**I am actively looking for a Ph.D. position, please feel free to contact me.**
+**I will join Stanford Doerr School of Sustainability this year!**
 
 My Wechat Media Platform (in Chinese): [气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg)
 
 Handling Editor of [*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with [*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/).
 Co-founder, [China Climate Communication Initiative](https://climcomm.netlify.app/). 
 [*CEEDER*](https://environmentalevidence.org/ceeder/) Review College Member.
+
+R package development: 
+* 📦️[SECFC Shiny App:](https://ziqianxia.shinyapps.io/secfc/) Shiny UI for Survey Embedded Carbon Footprint Calculator
+* 📦️[SECFC:](https://jianing-d.github.io/SECFC/) Survey Embedded Carbon Footprint Calculator
 
 Python package development: 
 
