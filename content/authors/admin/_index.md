@@ -18,9 +18,9 @@ interests:
 - Climate Change
 - Research Synthesis
 organizations:
-- name: Tongji University
-  url: https://en.tongji.edu.cn/
-role: Graduate Student
+- name: Stanford University
+  url: https://stanford.edu/
+role: Incoming PhD Student
 social:
 - icon: envelope
   icon_pack: fas
