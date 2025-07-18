@@ -20,7 +20,7 @@ interests:
 organizations:
 - name: Stanford University
   url: https://stanford.edu/
-role: Incoming PhD Student
+role: PhD Student
 social:
 - icon: envelope
   icon_pack: fas
