@@ -1,10 +1,10 @@
 ---
-bio: My research interests include Environmental Behaviour、Environmental Economics and Meta Science.
+bio: My research interests include Environmental Behaviour, Environmental Economics and Research Synthsis.
 education:
   courses:
   - course: Master in Public Policy
     institution: Tongji University
-    year: 2022-2024
+    year: 2022-2025
   - course: BEc in Economic Statistics
     institution: Nanchang University
     year: 2018-2022
@@ -74,6 +74,7 @@ Python package development:
 
 Ad Hoc Reviewer: 
 - *Global Environmental Change* 
+- *Nexus*
 - *Environmental Evidence*
 - *Journal of Cleaner Production*
 - *Environment, Development and Sustainability*
@@ -84,5 +85,10 @@ Ad Hoc Reviewer:
 - *Current Research in Behavioral Sciences*
 - *Scientific Reports*
 - *Discover Sustainability*
+- *Travel Behaviour and Society*
+- *Journal of Environmental Management*
+- *Geography and Sustainability*
+- *Environmental Research Communications*
+- *Environmental Research Letters*
 
 {{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/resume.pdf" "newtab" >}}resumé{{< /staticref >}}. &nbsp; &nbsp; &nbsp; {{< icon name="orcid" pack="fab" >}} View my [ORCiD](https://orcid.org/my-orcid?orcid=0000-0002-9551-0024).
