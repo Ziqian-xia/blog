@@ -1,0 +1,93 @@
+---
+title: "Ziqian Xia"
+description-meta: "Personal academic website for Ziqian Xia"
+image: ""
+page-navigation: false
+toc: false
+page-layout: full
+
+# Hero section configuration.  The `about` section defines a hero
+# banner at the top of the home page.  The links below point to your
+# various profiles; update or add items as appropriate.
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  links:
+    - icon: envelope
+      text: Email
+      href: mailto:Ziqian.research@gmail.com
+    - icon: github
+      text: GitHub
+      href: https://github.com/ziqian-xia
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=dyNjCrIAAAAJ&hl=en&oi=ao
+      target: _blank
+    - text: "{{< fa brands twitter >}} Twitter"
+      href: https://twitter.com/ziqian_xia
+      target: _blank
+
+listing:
+  - id: recent-posts
+    contents:
+      - posts
+      - posts/post-links.yml
+    exclude:
+      title: ""
+    type: grid
+    max-items: 3
+    page-size: 3
+    fields: [image, date, title, subtitle]
+    max-description-length: 75
+    sort:
+      - "date desc"
+
+---
+
+:::{#hero-heading}
+
+Hi there, I’m **Ziqian Xia**, an incoming Ph.D. student at
+[Stanford University](https://stanford.edu/). I’m also a primary
+researcher at [Chao Zhang’s Group](https://sem.tongji.edu.cn/semen/12413.html)
+and a member of the
+[Cambridge Collective Intelligence & Design Group](https://camcid.github.io/).
+
+- I’m interested in research on the human and policy dimensions of climate
+  change.  Currently I’m trying to understand climate change mitigation and
+  adaptation behaviour using IoT‑based and remote sensing techniques.
+  See [my full publication list](https://ziqian-xia.tech/publist/) for details.
+- I use MRP and MIRO to conduct large‑scale surveys of Chinese
+  individuals, estimating their climate change perceptions and individual
+  carbon footprints.  See the [China Climate Communication Initiative](https://climcomm.netlify.app/)
+  for details.
+
+I received my academic training at
+[Xi Tian’s Group](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm)
+under the guidance of [Prof. Dr. Xi Tian](http://sem.ncu.edu.cn/szdw/gccrc/gccrcjxssqjhljrc/799a668ea7be430c9edb199b04109392.htm)
+and at the [Bits to Energy Lab](https://www.digitaltransformation.rw.fau.eu/)
+of FAU Germany under the guidance of
+[Prof. Dr. Verena Tiefenbeck](https://www.wiso.waw.fau.de/forschung/forschungsprofil/professorenschaft/prof-dr-verena-tiefenbeck/).
+
+**I will join the Stanford Doerr School of Sustainability this year!**
+
+My WeChat media platform (in Chinese) is called
+[气候变化与亲环境行为](https://ziqian-xia.tech/uploads/qrcode.jpg).
+
+I am the handling editor of
+[*PROCEED*](https://www.proceedevidence.info/user/team) affiliated with the
+[*Environmental Evidence Journal*](https://environmentalevidencejournal.biomedcentral.com/),
+co‑founder of the
+[China Climate Communication Initiative](https://climcomm.netlify.app/),
+and a member of the
+[*CEEDER*](https://environmentalevidence.org/ceeder/) Review College.
+
+:::
+
+## Recent posts
+
+Check out the latest
+[Posts](/posts.qmd).  You’ll find news, research updates and other
+announcements.
+
+<p align="right">[All Posts »](/posts.qmd)</p>

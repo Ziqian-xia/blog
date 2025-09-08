@@ -1,0 +1,9 @@
+---
+title: "People"
+description-meta: "Collaborators and mentors"
+title-block-banner: false
+---
+
+I’m fortunate to work with and learn from a number of inspiring
+colleagues and mentors.  Information about collaborators, students and
+mentors will be added to this section in the future.

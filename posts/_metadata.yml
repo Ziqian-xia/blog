@@ -1,0 +1,12 @@
+# Options specified here apply to all posts in this folder
+
+freeze: true  # freeze computational output for reproducible builds
+
+# Disable banner title blocks for posts by default.  Set to true on a
+# per‑post basis if you want to enable large banner headings.
+title-block-banner: false
+
+# Draft support: use `draft: true` in a post’s front matter to keep it
+# unpublished while editing.  Posts with draft set to true will not be
+# included in the listing.
+draft-mode: unlinked

@@ -1,0 +1,67 @@
+project:
+  type: website
+  output-dir: docs
+
+# Site meta data
+description-meta: "Personal academic website for Ziqian Xia"
+author-meta: "Ziqian Xia"
+
+website:
+  title: "Ziqian Xia"
+  image: ""  # you can add a profile image into files/images and specify the path here
+  description: "Personal academic website for Ziqian Xia"
+
+  # Configure the navigation bar.  Comment out any items you do not need.
+  navbar:
+    background: light
+    left:
+      # About section with dropdown for posts and contact
+      - text: About
+        menu:
+          - text: Posts
+            href: posts.qmd
+          - text: Contact
+            href: contact.qmd
+      # Research menu with a link to publications.  Additional pages can be added later.
+      - text: Research
+        menu:
+          - text: Publications
+            href: publications.qmd
+      # Teaching page (optional)
+      - text: Teaching
+        href: teaching.qmd
+      # Group or People page (optional)
+      - text: People
+        href: people.qmd
+    right:
+      # Link to CV.  Replace with the path to your résumé in the files directory.
+      - text: CV
+        href: files/resume.pdf
+      - icon: github
+        href: https://github.com/ziqian-xia
+        target: _blank
+      - icon: rss
+        href: posts.xml
+        target: _blank
+
+  # Enable search in the navbar
+  search:
+    location: navbar
+    type: textbox
+
+  # Enable reader mode and draft mode for unpublished posts
+  reader-mode: true
+  draft-mode: unlinked
+
+  # Repository URL (optional).  This adds links for source editing and issues.
+  repo-url: https://github.com/Ziqian-xia/blog
+
+  # Use a simple bootstrap theme.  You can change this to another built‑in theme.
+  format:
+    html:
+      theme: cosmo
+      toc: true
+      code-copy: true
+      code-link: true
+      code-overflow: wrap
+      fig-align: center

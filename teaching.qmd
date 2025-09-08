@@ -1,0 +1,11 @@
+---
+title: "Teaching"
+description-meta: "Courses and workshops"
+title-block-banner: false
+---
+
+I have taught and assisted with courses and workshops related to
+environmental economics, statistics and R programming.  Materials from
+past workshops can be found in the posts listed on this site.
+
+*More teaching information will be added here.*

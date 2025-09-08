@@ -1,0 +1,12 @@
+---
+title: "Publications"
+description-meta: "Selected publications by Ziqian Xia"
+title-block-banner: false
+---
+
+For a complete and up‑to‑date list of my publications and working
+papers, please visit my [publication list](https://ziqian-xia.tech/publist/).
+
+Below are a few selected papers and preprints:
+
+*This section will be updated soon.*
