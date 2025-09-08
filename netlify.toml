@@ -1,0 +1,17 @@
+## Netlify configuration for the Quarto website
+
+# The build section tells Netlify how to build your site.
+[build]
+  # Use Quarto to render the site.
+  # Note: Netlify does not install Quarto by default, so we include a plugin below.
+  command = "quarto render"
+  # Quarto outputs the rendered HTML into the directory specified in _quarto.yml
+  # (we set output-dir: docs).  This is the directory Netlify will publish.
+  publish = "docs"
+
+# Use the official Quarto Netlify plugin to install Quarto before running the build.
+[[plugins]]
+  package = "@quarto/netlify-plugin-quarto"
+  # (Optional) specify the version of Quarto to use.  Omit to use the default latest version.
+  # [plugins.inputs]
+  #   version = "1.4.550"
